@@ -1,12 +1,11 @@
 <div class="container">
-    <img (click)="translateToGerman()" src="img/de.svg" class="language language-de" alt="DE">
-    <img (click)="translateToEnglish()" src="img/us.svg" class="language" alt="US">
+    <img (click)="translateToGerman()" src="assets/img/de.svg" class="language language-de" alt="DE">
+    <img (click)="translateToEnglish()" src="assets/img/us.svg" class="language" alt="US">
     <h1 id="headline">Hallo, ich bin Lukas</h1>
     <h2 id="project_headline">Coole Webseiten</h2>
-    <!-- <div class="projects">
-        <a href="games/rpg/index.html" id="rpg_link">RPG Spiel</a>
-        <a href="games/pirate_game/index.html" id="pirate_game_link">Piratenspiel</a>
-    </div> -->
+    <div class="projects">
+        <a routerLink="/sand-site" id="sand-site-link">Sand Spiel</a>
+    </div> 
     <h2 id="platforms">Plattformen</h2>
     <div class="projects">
         <a href="https://github.com/codedbylukas">GitHub</a>
