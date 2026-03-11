@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './box.sass',
 })
 export class Box {
-
+   translateToGerman() {
+    document.getElementById("headline")!.innerHTML = "Hallo, ich bin Lukas";
+  }
+  translateToEnglish() {
+    document.getElementById("headline")!.innerHTML = "Hello, I'm Lukas";
+  }
 }
