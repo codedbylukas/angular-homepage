@@ -1,6 +1,7 @@
 {
   "routes": {
     "/": {},
-    "/data-security": {}
+    "/data-security": {},
+    "/sand-site": {}
   }
 }
