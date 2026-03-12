@@ -1,9 +1,10 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { HomeBtn } from './home-btn/home-btn'
 
 let confetti_list: HTMLElement[] = [];
 @Component({
   selector: 'app-sand-site',
-  imports: [],
+  imports: [HomeBtn],
   templateUrl: './sand-site.html',
   styleUrl: './sand-site.sass',
   encapsulation: ViewEncapsulation.None
