@@ -10,15 +10,15 @@ import { RouterLink, RouterModule } from "@angular/router";
 })
 export class Box {
    translateToGerman() {
-    document.getElementById("headline")!.innerHTML = "Hallo, ich bin Lukas";
-    document.getElementById("project_headline")!.innerHTML = "Coole Webseiten";
-    document.getElementById("platforms")!.innerHTML = "Plattformen";
-    document.getElementById("sand-site-link")!.innerHTML = "Sand Spiel";
+    document.getElementById("headline")!.textContent = "Hallo, ich bin Lukas";
+    document.getElementById("project_headline")!.textContent = "Coole Webseiten";
+    document.getElementById("platforms")!.textContent = "Plattformen";
+    document.getElementById("sand-site-link")!.textContent = "Sand Spiel";
   }
   translateToEnglish() {
-    document.getElementById("headline")!.innerHTML = "Hello, I'm Lukas";
-    document.getElementById("project_headline")!.innerHTML = "Cool Websites";
-    document.getElementById("platforms")!.innerHTML = "Platforms";
-    document.getElementById("sand-site-link")!.innerHTML = "Sand Game";
+    document.getElementById("headline")!.textContent = "Hello, I'm Lukas";
+    document.getElementById("project_headline")!.textContent = "Cool Websites";
+    document.getElementById("platforms")!.textContent = "Platforms";
+    document.getElementById("sand-site-link")!.textContent = "Sand Game";
   }
 }

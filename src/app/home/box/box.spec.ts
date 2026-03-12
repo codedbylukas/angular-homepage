@@ -17,7 +17,6 @@ describe('Box', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-
   it('should create', () => {
     expect(component).toBeTruthy();
   });
@@ -41,11 +40,45 @@ describe('Box', () => {
     button.click();
     expect(component.translateToGerman).toHaveBeenCalled();
   });
-  it('should update platforms text when German button clicked', () => {
+  it('should update headline text when German button clicked', () => {
     const button = fixture.nativeElement.querySelector('#german-button');
     button.click();
     fixture.detectChanges();
-    const p = fixture.nativeElement.querySelector('#platforms');
-    expect(p.textContent).toContain('Plattformen');
+    const headline = fixture.nativeElement.querySelector('#headline');
+    expect(headline.textContent).toContain('Hallo, ich bin Lukas');
+  });
+   it('should update project headline text when German button clicked', () => {
+    const button = fixture.nativeElement.querySelector('#german-button');
+    button.click();
+    fixture.detectChanges();
+    const projectHeadline = fixture.nativeElement.querySelector('#project_headline');
+    expect(projectHeadline.textContent).toContain('Coole Webseiten');
+  });
+   it('should update platforms text when German button clicked', () => {
+    const button = fixture.nativeElement.querySelector('#german-button');
+    button.click();
+    fixture.detectChanges();
+    const platforms = fixture.nativeElement.querySelector('#platforms');
+    expect(platforms.textContent).toContain('Plattformen');
+  });
+   it('should update sand site link text when German button clicked', () => {
+    const button = fixture.nativeElement.querySelector('#german-button');
+    button.click();
+    fixture.detectChanges();
+    const sandSiteLink = fixture.nativeElement.querySelector('#sand-site-link');
+    expect(sandSiteLink.textContent).toContain('Sand Spiel');
+  });
+  it('should update text when English button clicked', () => {
+    const button = fixture.nativeElement.querySelector('#english-button');
+    button.click();
+    fixture.detectChanges();
+    const headline = fixture.nativeElement.querySelector('#headline');
+    expect(headline.textContent).toContain("Hello, I'm Lukas");
+    const projectHeadline = fixture.nativeElement.querySelector('#project_headline');
+    expect(projectHeadline.textContent).toContain('Cool Websites');
+    const platforms = fixture.nativeElement.querySelector('#platforms');
+    expect(platforms.textContent).toContain('Platforms');
+    const sandSiteLink = fixture.nativeElement.querySelector('#sand-site-link');
+    expect(sandSiteLink.textContent).toContain('Sand Game');
   });
 });
