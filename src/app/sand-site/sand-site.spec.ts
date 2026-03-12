@@ -23,4 +23,10 @@ describe('SandSite', () => {
     expect(component.fireConfetti).toBeDefined();
     expect(typeof component.fireConfetti).toEqual('function');
   });
+  it('should call fireConfetti when button clicked', () => {
+  spyOn(component, 'fireConfetti');
+  const button = fixture.nativeElement.querySelector('button');
+  button.click();
+  expect(component.fireConfetti).toHaveBeenCalled();
+});
 });
