@@ -98,6 +98,34 @@ var require_box_spec = __commonJS({
         const sandSiteLink = fixture.nativeElement.querySelector("#sand-site-link");
         expect(sandSiteLink.textContent).toContain("Sand Game");
       });
+      it("should update headline text when English button clicked", () => {
+        const button = fixture.nativeElement.querySelector("#english-button");
+        button.click();
+        fixture.detectChanges();
+        const headline = fixture.nativeElement.querySelector("#headline");
+        expect(headline.textContent).toContain("Hello, I'm Lukas");
+      });
+      it("should update project headline text when English button clicked", () => {
+        const button = fixture.nativeElement.querySelector("#english-button");
+        button.click();
+        fixture.detectChanges();
+        const projectHeadline = fixture.nativeElement.querySelector("#project_headline");
+        expect(projectHeadline.textContent).toContain("Cool Websites");
+      });
+      it("should update platforms text when English button clicked", () => {
+        const button = fixture.nativeElement.querySelector("#english-button");
+        button.click();
+        fixture.detectChanges();
+        const platforms = fixture.nativeElement.querySelector("#platforms");
+        expect(platforms.textContent).toContain("Platforms");
+      });
+      it("should update Sand Game text when English button clicked", () => {
+        const button = fixture.nativeElement.querySelector("#english-button");
+        button.click();
+        fixture.detectChanges();
+        const sandSiteLink = fixture.nativeElement.querySelector("#sand-site-link");
+        expect(sandSiteLink.textContent).toContain("Sand Game");
+      });
     });
   }
 });
