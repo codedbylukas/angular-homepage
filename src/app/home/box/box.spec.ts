@@ -73,19 +73,6 @@ describe('Box', () => {
     expect(sandSiteLink.textContent).toContain('Sand Spiel');
   });
   // Text Update English Translation
-  it('should update text when English button clicked', () => {
-    const button = fixture.nativeElement.querySelector('#english-button');
-    button.click();
-    fixture.detectChanges();
-    const headline = fixture.nativeElement.querySelector('#headline');
-    expect(headline.textContent).toContain("Hello, I'm Lukas");
-    const projectHeadline = fixture.nativeElement.querySelector('#project_headline');
-    expect(projectHeadline.textContent).toContain('Cool Websites');
-    const platforms = fixture.nativeElement.querySelector('#platforms');
-    expect(platforms.textContent).toContain('Platforms');
-    const sandSiteLink = fixture.nativeElement.querySelector('#sand-site-link');
-    expect(sandSiteLink.textContent).toContain('Sand Game');
-  });
   it('should update headline text when English button clicked', () => {
     const button = fixture.nativeElement.querySelector('#english-button');
     button.click();
