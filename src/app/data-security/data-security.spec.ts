@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 
 import { DataSecurityComponent } from './data-security';
 
@@ -8,7 +9,8 @@ describe('DataSecurity', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DataSecurityComponent]
+      imports: [DataSecurityComponent],
+      providers: [provideRouter([])]
     })
       .compileComponents();
 
