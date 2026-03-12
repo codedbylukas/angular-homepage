@@ -17,9 +17,11 @@ describe('Box', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
+  // Component Created
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  // Translation Functions Defined
   it('Translate English is defined', () => {
     expect(component.translateToEnglish).toBeDefined();
     expect(typeof component.translateToEnglish).toEqual('function');
@@ -28,6 +30,7 @@ describe('Box', () => {
     expect(component.translateToGerman).toBeDefined();
     expect(typeof component.translateToGerman).toEqual('function');
   });
+  // Test Button Clicks
   it('should call translateToEnglish when English button clicked', () => {
     spyOn(component, 'translateToEnglish');
     const button = fixture.nativeElement.querySelector('#english-button');
@@ -40,6 +43,7 @@ describe('Box', () => {
     button.click();
     expect(component.translateToGerman).toHaveBeenCalled();
   });
+  // Text Update German Translation
   it('should update headline text when German button clicked', () => {
     const button = fixture.nativeElement.querySelector('#german-button');
     button.click();
@@ -68,6 +72,7 @@ describe('Box', () => {
     const sandSiteLink = fixture.nativeElement.querySelector('#sand-site-link');
     expect(sandSiteLink.textContent).toContain('Sand Spiel');
   });
+  // Text Update English Translation
   it('should update text when English button clicked', () => {
     const button = fixture.nativeElement.querySelector('#english-button');
     button.click();
