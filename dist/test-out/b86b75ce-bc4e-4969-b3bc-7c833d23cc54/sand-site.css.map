@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/sand-site/sand-site.sass"],
+  "sourcesContent": [".confetti-piece\n    position: absolute\n    width: 5px\n    height: 5px\n    background-color: orange\n    top: 0\n    left: 50%\n    opacity: 0.7\n    border-radius: 50%\n    animation: confetti-fall 1s linear infinite\n    z-index: 1000\n\n.confetti-button\n    padding: 10px 20px\n    font-size: 16px\n    background-color: #ffcc00\n    border: none\n    border-radius: 5px\n    align-items: center\n    cursor: pointer\n    color: #e9e9e9f6\n    font-weight: bold\n\n.center\n    display: flex\n    justify-content: center\n    align-items: center\n    height: 100vh\n\n@keyframes confetti-fall \n    from\n        transform: translateY(0) rotate(0deg)\n    to\n        transform: translateY(100vh) rotate(360deg)\n\n"],
+  "mappings": ";AAAA,CAAA;AACI,YAAA;AACA,SAAA;AACA,UAAA;AACA,oBAAA;AACA,OAAA;AACA,QAAA;AACA,WAAA;AACA,iBAAA;AACA,aAAA,cAAA,GAAA,OAAA;AACA,WAAA;;AAEJ,CAAA;AACI,WAAA,KAAA;AACA,aAAA;AACA,oBAAA;AACA,UAAA;AACA,iBAAA;AACA,eAAA;AACA,UAAA;AACA,SAAA,KAAA,GAAA,EAAA,GAAA,EAAA,GAAA,EAAA;AACA,eAAA;;AAEJ,CAAA;AACI,WAAA;AACA,mBAAA;AACA,eAAA;AACA,UAAA;;AAEJ,WApBI;AAqBA;AACI,eAAA,WAAA,GAAA,OAAA;;AACJ;AACI,eAAA,WAAA,OAAA,OAAA;;;",
+  "names": []
+}
