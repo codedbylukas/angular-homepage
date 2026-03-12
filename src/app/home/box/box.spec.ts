@@ -10,9 +10,8 @@ describe('Box', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Box],
-      providers: [provideRouter([])]
-    })
-      .compileComponents();
+      providers: [provideRouter([])],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(Box);
     component = fixture.componentInstance;
@@ -42,5 +41,11 @@ describe('Box', () => {
     button.click();
     expect(component.translateToGerman).toHaveBeenCalled();
   });
-  
+  it('should update platforms text when German button clicked', () => {
+    const button = fixture.nativeElement.querySelector('#german-button');
+    button.click();
+    fixture.detectChanges();
+    const p = fixture.nativeElement.querySelector('#platforms');
+    expect(p.textContent).toContain('Plattformen');
+  });
 });
