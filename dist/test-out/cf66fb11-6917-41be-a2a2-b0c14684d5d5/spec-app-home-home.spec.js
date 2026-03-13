@@ -1,7 +1,7 @@
 import {
   Box,
   init_box
-} from "./chunk-M3X2GVGB.js";
+} from "./chunk-BXAALFL3.js";
 import {
   Footer,
   init_footer
