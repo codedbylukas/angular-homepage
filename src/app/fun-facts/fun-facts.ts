@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './fun-facts.sass',
 })
 export class FunFacts {
+  playAudio() {
+    let randomNumber = Math.floor(Math.random() * 104);
+    let audio = new Audio(`assets/audio/${randomNumber}.wav`);
+    audio.play();
+  }
 }

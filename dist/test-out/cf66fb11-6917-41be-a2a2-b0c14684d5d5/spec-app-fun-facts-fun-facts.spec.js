@@ -16,7 +16,7 @@ import {
 var fun_facts_default;
 var init_fun_facts = __esm({
   "angular:jit:template:src/app/fun-facts/fun-facts.html"() {
-    fun_facts_default = "<p>fun-facts works!</p>\n";
+    fun_facts_default = '<button (click)="playAudio()">Click me</button>\n';
   }
 });
 
@@ -38,6 +38,11 @@ var init_fun_facts3 = __esm({
     init_fun_facts2();
     init_core();
     FunFacts = class FunFacts2 {
+      playAudio() {
+        let randomNumber = Math.floor(Math.random() * 104);
+        let audio = new Audio(`assets/audio/${randomNumber}.wav`);
+        audio.play();
+      }
     };
     FunFacts = __decorate([
       Component({
