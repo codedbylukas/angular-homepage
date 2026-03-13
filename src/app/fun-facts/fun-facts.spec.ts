@@ -1,0 +1,25 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
+
+import { FunFacts } from './fun-facts';
+
+describe('FunFacts', () => {
+  let component: FunFacts;
+  let fixture: ComponentFixture<FunFacts>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [FunFacts],
+      providers: [provideRouter([])]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(FunFacts);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

@@ -2,6 +2,7 @@
   "routes": {
     "/": {},
     "/data-security": {},
+    "/fun-facts": {},
     "/sand-site": {}
   }
 }

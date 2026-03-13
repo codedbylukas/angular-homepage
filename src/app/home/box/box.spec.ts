@@ -72,6 +72,13 @@ describe('Box', () => {
     const sandSiteLink = fixture.nativeElement.querySelector('#sand-site-link');
     expect(sandSiteLink.textContent).toContain('Sand Spiel');
   });
+   it('should update Fun Facts link text when German button clicked', () => {
+    const button = fixture.nativeElement.querySelector('#german-button');
+    button.click();
+    fixture.detectChanges();
+    const sandSiteLink = fixture.nativeElement.querySelector('#fun-facts');
+    expect(sandSiteLink.textContent).toContain('Lustige Fakten');
+  });
   // Text Update English Translation
   it('should update headline text when English button clicked', () => {
     const button = fixture.nativeElement.querySelector('#english-button');
@@ -100,5 +107,12 @@ describe('Box', () => {
     fixture.detectChanges();
     const sandSiteLink = fixture.nativeElement.querySelector('#sand-site-link');
     expect(sandSiteLink.textContent).toContain('Sand Game');
+  });
+    it('should update Fun Facts text when English button clicked', () => {
+    const button = fixture.nativeElement.querySelector('#english-button');
+    button.click();
+    fixture.detectChanges();
+    const sandSiteLink = fixture.nativeElement.querySelector('#fun-facts');
+    expect(sandSiteLink.textContent).toContain('Fun Facts');
   });
 });
