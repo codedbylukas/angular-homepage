@@ -16,7 +16,7 @@ import {
 var fun_facts_default;
 var init_fun_facts = __esm({
   "angular:jit:template:src/app/fun-facts/fun-facts.html"() {
-    fun_facts_default = '<button (click)="playAudio()">Click me</button>\n';
+    fun_facts_default = '<div class="center">\n  <button (click)="playAudio()" id="button-click">Click me</button>\n</div>\n';
   }
 });
 
@@ -24,7 +24,7 @@ var init_fun_facts = __esm({
 var fun_facts_default2;
 var init_fun_facts2 = __esm({
   "angular:jit:style:src/app/fun-facts/fun-facts.sass"() {
-    fun_facts_default2 = "/* src/app/fun-facts/fun-facts.sass */\n/*# sourceMappingURL=fun-facts.css.map */\n";
+    fun_facts_default2 = "/* src/app/fun-facts/fun-facts.sass */\nbutton {\n  background-color: #0ae2f1;\n  border: none;\n  border-radius: 50%;\n  width: 180px;\n  height: 80px;\n  font-size: 40px;\n  color: white;\n}\n.center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}\n/*# sourceMappingURL=fun-facts.css.map */\n";
   }
 });
 
