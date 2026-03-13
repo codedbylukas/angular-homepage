@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 
 import { FunFacts } from './fun-facts';
 
@@ -8,7 +9,8 @@ describe('FunFacts', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FunFacts]
+      imports: [FunFacts],
+      providers: [provideRouter([])]
     })
     .compileComponents();
 

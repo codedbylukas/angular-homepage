@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { HomeBtn } from './home-btn/home-btn';
 
 @Component({
   selector: 'app-fun-facts',
-  imports: [],
+  imports: [HomeBtn],
   templateUrl: './fun-facts.html',
   styleUrl: './fun-facts.sass',
 })
