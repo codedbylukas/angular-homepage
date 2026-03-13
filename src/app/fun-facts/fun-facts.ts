@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './fun-facts.sass',
 })
 export class FunFacts {
-
 }
