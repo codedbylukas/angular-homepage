@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { HomeBtn } from './home-btn/home-btn';
 
+let playing: boolean = false;
+let audio: HTMLAudioElement;
 @Component({
   selector: 'app-fun-facts',
   imports: [HomeBtn],
@@ -9,8 +11,18 @@ import { HomeBtn } from './home-btn/home-btn';
 })
 export class FunFacts {
   playAudio() {
-    let randomNumber:Number = Math.floor(Math.random() * 204);
-    let audio:HTMLAudioElement = new Audio(`assets/audio/${randomNumber}.wav`);
-    audio.play();
+    if (!playing) {
+      playing = true;
+      let randomNumber: Number = Math.floor(Math.random() * 204);
+      audio = new Audio(`assets/audio/${randomNumber}.wav`);
+      audio.onended = () => {
+        playing = false;
+      };
+      audio.play();
+    }
+    else {
+      playing = false;
+      audio.pause();
+    }
   }
 }
