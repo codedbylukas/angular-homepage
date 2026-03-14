@@ -22,4 +22,8 @@ describe('FunFacts', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should implement playAudio function', () => {
+    expect(component.playAudio).toBeDefined();
+    expect(typeof component.playAudio).toEqual('function');
+  });
 });

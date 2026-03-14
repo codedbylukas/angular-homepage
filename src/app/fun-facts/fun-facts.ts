@@ -9,8 +9,8 @@ import { HomeBtn } from './home-btn/home-btn';
 })
 export class FunFacts {
   playAudio() {
-    let randomNumber = Math.floor(Math.random() * 104);
-    let audio = new Audio(`assets/audio/${randomNumber}.wav`);
+    let randomNumber:Number = Math.floor(Math.random() * 204);
+    let audio:HTMLAudioElement = new Audio(`assets/audio/${randomNumber}.wav`);
     audio.play();
   }
 }
