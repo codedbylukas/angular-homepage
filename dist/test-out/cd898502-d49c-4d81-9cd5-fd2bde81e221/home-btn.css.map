@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/fun-facts/home-btn/home-btn.sass"],
-  "sourcesContent": ["button \n  display: flex\n  justify-content: center\n  align-items: center\n  width: 100px\n  height: 40px\n  background-color: #007bff\n  border: none\n  border-radius: 50%\n  font-size: 60px\n  padding: 140px\n  padding-top: 40px\n  padding-bottom: 40px\n  color: #f5f6facc\n\ndiv\n  margin-top: 40px\n  display: flex\n  justify-content: center\n  align-items: center\n  padding-left: 20px\n  padding-right: 20px  \n"],
-  "mappings": ";AAAA;AACE,WAAA;AACA,mBAAA;AACA,eAAA;AACA,SAAA;AACA,UAAA;AACA,oBAAA;AACA,UAAA;AACA,iBAAA;AACA,aAAA;AACA,WAAA;AACA,eAAA;AACA,kBAAA;AACA,SAAA,KAAA,GAAA,EAAA,GAAA,EAAA,GAAA,EAAA;;AAEF;AACE,cAAA;AACA,WAAA;AACA,mBAAA;AACA,eAAA;AACA,gBAAA;AACA,iBAAA;;",
-  "names": []
-}
