@@ -6,7 +6,7 @@ let confetti_list: HTMLElement[] = [];
   selector: 'app-sand-site',
   imports: [HomeBtn],
   templateUrl: './sand-site.html',
-  styleUrl: './sand-site.sass',
+  styleUrl: './sand-site.scss',
   encapsulation: ViewEncapsulation.None
 })
 export class SandSite {
