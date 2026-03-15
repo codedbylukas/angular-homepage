@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { HomeBtn } from './home-btn/home-btn';
 
 interface Todo {
   id: number;
@@ -9,7 +10,7 @@ interface Todo {
 
 @Component({
   selector: 'app-todo-list',
-  imports: [],
+  imports: [HomeBtn],
   templateUrl: './todo-list.html',
   styleUrl: './todo-list.sass',
 })
