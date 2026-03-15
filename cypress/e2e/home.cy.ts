@@ -1,4 +1,4 @@
-describe('My First Test', () => {
+describe('Text is here there', () => {
   it('Visits the initial project page', () => {
     cy.visit('/');
   });
@@ -13,6 +13,10 @@ describe('My First Test', () => {
     cy.contains('Lustige Fakten');
     cy.contains('ToDo Liste');
   });
+});
+
+describe('Text is possibe to click it', () => {
+
   it('Test if Sand Game is able to Click it', () => {
     cy.visit('/');
     cy.contains('Sand Spiel').click();
@@ -30,6 +34,3 @@ describe('My First Test', () => {
     cy.visit("/")
   });
 });
-
-// Lustige Fakten
-// ToDo Liste
