@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { HomeBtn } from './home-btn/home-btn';
 
-let playing: boolean = false;
-let audio: HTMLAudioElement;
-const facts = [
+export let playing: boolean = false;
+export let audio: HTMLAudioElement;
+export const facts = [
   "Octopusse haben drei Herzen.",
   "Ein Tag auf der Venus dauert länger als ein Jahr dort.",
   "Haie existieren länger als Bäume.",

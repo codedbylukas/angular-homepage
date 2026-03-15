@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
-
-import { FunFacts } from './fun-facts';
+import { audio, facts, FunFacts, playing } from './fun-facts';
 
 describe('FunFacts', () => {
   let component: FunFacts;
@@ -12,7 +11,7 @@ describe('FunFacts', () => {
       imports: [FunFacts],
       providers: [provideRouter([])]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(FunFacts);
     component = fixture.componentInstance;
@@ -32,4 +31,18 @@ describe('FunFacts', () => {
     button.click();
     expect(component.playAudio).toHaveBeenCalled();
   });
+  it('should define Variables', () => {
+    expect(playing).toBeDefined();
+    expect(audio).toBeUndefined();
+    expect(facts).toBeDefined();
+    expect(typeof facts).toEqual('object'); // In JS/TS arrays are of type 'object'
+    expect(typeof playing).toEqual('boolean');
+    expect(typeof audio).toEqual('undefined'); // Since it's not initialized yet
+  });
 });
+
+// const button = fixture.nativeElement.querySelector('#english-button');
+// button.click();
+// fixture.detectChanges();
+// const sandSiteLink = fixture.nativeElement.querySelector('#fun-facts');
+// expect(sandSiteLink.textContent).toContain('Fun Facts');
