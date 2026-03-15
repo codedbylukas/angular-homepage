@@ -14,11 +14,13 @@ export class Box {
     document.getElementById("project_headline")!.textContent = "Coole Webseiten";
     document.getElementById("sand-site-link")!.textContent = "Sand Spiel";
     document.getElementById("fun-facts")!.textContent = "Lustige Fakten";
+    document.getElementById('todo-list')!.textContent = "ToDo Liste";
   }
   translateToEnglish() {
     document.getElementById("headline")!.textContent = "Hello, I'm Lukas";
     document.getElementById("project_headline")!.textContent = "Cool Websites";
     document.getElementById("sand-site-link")!.textContent = "Sand Game";
     document.getElementById("fun-facts")!.textContent = "Fun Facts";
+    document.getElementById('todo-list')!.textContent = "ToDo list";
   }
 }

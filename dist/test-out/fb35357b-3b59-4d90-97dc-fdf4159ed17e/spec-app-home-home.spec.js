@@ -5,7 +5,7 @@ import {
 import {
   Box,
   init_box
-} from "./chunk-ND3XK333.js";
+} from "./chunk-LQ5FHVQ3.js";
 import {
   RouterModule,
   init_router,
