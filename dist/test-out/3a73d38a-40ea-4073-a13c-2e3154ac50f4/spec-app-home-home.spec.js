@@ -1,7 +1,7 @@
 import {
   Box,
   init_box
-} from "./chunk-H3HXPOJV.js";
+} from "./chunk-22GVGA44.js";
 import {
   Footer,
   init_footer
@@ -33,11 +33,11 @@ var init_home = __esm({
   }
 });
 
-// angular:jit:style:src/app/home/home.sass
+// angular:jit:style:src/app/home/home.scss
 var home_default2;
 var init_home2 = __esm({
-  "angular:jit:style:src/app/home/home.sass"() {
-    home_default2 = "/* src/app/home/home.sass */\nh1 {\n  font-size: 3rem;\n  padding-left: 20px;\n  padding-right: 20px;\n  text-align: center;\n}\napp-footer {\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n}\n/*# sourceMappingURL=home.css.map */\n";
+  "angular:jit:style:src/app/home/home.scss"() {
+    home_default2 = "/* src/app/home/home.scss */\nh1 {\n  font-size: 3rem;\n  padding-left: 20px;\n  padding-right: 20px;\n  text-align: center;\n}\napp-footer {\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n}\n/*# sourceMappingURL=home.css.map */\n";
   }
 });
 

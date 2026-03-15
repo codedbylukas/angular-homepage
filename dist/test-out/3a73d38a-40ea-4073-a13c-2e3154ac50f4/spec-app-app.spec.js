@@ -25,11 +25,11 @@ var init_app = __esm({
   }
 });
 
-// angular:jit:style:src/app/app.sass
+// angular:jit:style:src/app/app.scss
 var app_default2;
 var init_app2 = __esm({
-  "angular:jit:style:src/app/app.sass"() {
-    app_default2 = "/* src/app/app.sass */\n/*# sourceMappingURL=app.css.map */\n";
+  "angular:jit:style:src/app/app.scss"() {
+    app_default2 = "/* src/app/app.scss */\n/*# sourceMappingURL=app.css.map */\n";
   }
 });
 

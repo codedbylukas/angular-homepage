@@ -1,7 +1,7 @@
 import {
   HomeBtn,
   init_home_btn
-} from "./chunk-YTDDLWZO.js";
+} from "./chunk-5Y4HUIIF.js";
 import {
   init_router,
   provideRouter
@@ -28,11 +28,11 @@ var init_fun_facts = __esm({
   }
 });
 
-// angular:jit:style:src/app/fun-facts/fun-facts.sass
+// angular:jit:style:src/app/fun-facts/fun-facts.scss
 var fun_facts_default2;
 var init_fun_facts2 = __esm({
-  "angular:jit:style:src/app/fun-facts/fun-facts.sass"() {
-    fun_facts_default2 = "/* src/app/fun-facts/fun-facts.sass */\nbutton {\n  background-color: #0ae2f1;\n  border: none;\n  border-radius: 50%;\n  padding: 10px;\n  width: 180px;\n  font-size: 40px;\n  color: white;\n}\nh1 {\n  font-size: 40px;\n}\n.center {\n  display: grid;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}\n.half-center {\n  display: flex;\n  justify-content: center;\n}\n.end-center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n#currentFact {\n  background-color: rgba(33, 241, 78, 0.8156862745);\n  font-size: 20px;\n  border-radius: 15%;\n  z-index: 2;\n}\n/*# sourceMappingURL=fun-facts.css.map */\n";
+  "angular:jit:style:src/app/fun-facts/fun-facts.scss"() {
+    fun_facts_default2 = "/* src/app/fun-facts/fun-facts.scss */\nbutton {\n  background-color: #0ae2f1;\n  border: none;\n  border-radius: 50%;\n  padding: 10px;\n  width: 180px;\n  font-size: 40px;\n  color: white;\n}\nh1 {\n  font-size: 40px;\n}\n.center {\n  display: grid;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}\n.half-center {\n  display: flex;\n  justify-content: center;\n}\n.end-center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n#currentFact {\n  background-color: rgba(33, 241, 78, 0.8156862745);\n  font-size: 20px;\n  border-radius: 15%;\n  z-index: 2;\n}\n/*# sourceMappingURL=fun-facts.css.map */\n";
   }
 });
 

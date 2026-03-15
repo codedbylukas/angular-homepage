@@ -1,7 +1,7 @@
 import {
   HomeBtn,
   init_home_btn
-} from "./chunk-YTDDLWZO.js";
+} from "./chunk-OYP7D3SV.js";
 import {
   init_router,
   provideRouter
@@ -15,9 +15,9 @@ import {
   __commonJS
 } from "./chunk-TTULUY32.js";
 
-// src/app/fun-facts/home-btn/home-btn.spec.ts
+// src/app/data-security/home-btn/home-btn.spec.ts
 var require_home_btn_spec = __commonJS({
-  "src/app/fun-facts/home-btn/home-btn.spec.ts"(exports) {
+  "src/app/data-security/home-btn/home-btn.spec.ts"(exports) {
     init_testing();
     init_router();
     init_home_btn();
@@ -40,4 +40,4 @@ var require_home_btn_spec = __commonJS({
   }
 });
 export default require_home_btn_spec();
-//# sourceMappingURL=spec-app-fun-facts-home-btn-home-btn.spec.js.map
+//# sourceMappingURL=spec-app-data-security-home-btn-home-btn.spec.js.map

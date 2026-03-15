@@ -21,11 +21,11 @@ var init_home_btn = __esm({
   }
 });
 
-// angular:jit:style:src/app/fun-facts/home-btn/home-btn.sass
+// angular:jit:style:src/app/fun-facts/home-btn/home-btn.scss
 var home_btn_default2;
 var init_home_btn2 = __esm({
-  "angular:jit:style:src/app/fun-facts/home-btn/home-btn.sass"() {
-    home_btn_default2 = "/* src/app/fun-facts/home-btn/home-btn.sass */\nbutton {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100px;\n  height: 40px;\n  background-color: #007bff;\n  border: none;\n  border-radius: 50%;\n  font-size: 60px;\n  padding: 140px;\n  padding-top: 40px;\n  padding-bottom: 40px;\n  color: rgba(245, 246, 250, 0.8);\n}\ndiv {\n  margin-top: 40px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding-left: 20px;\n  padding-right: 20px;\n}\n/*# sourceMappingURL=home-btn.css.map */\n";
+  "angular:jit:style:src/app/fun-facts/home-btn/home-btn.scss"() {
+    home_btn_default2 = "/* src/app/fun-facts/home-btn/home-btn.scss */\nbutton {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100px;\n  height: 40px;\n  background-color: #007bff;\n  border: none;\n  border-radius: 50%;\n  font-size: 60px;\n  padding: 140px;\n  padding-top: 40px;\n  padding-bottom: 40px;\n  color: rgba(245, 246, 250, 0.8);\n}\ndiv {\n  margin-top: 40px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding-left: 20px;\n  padding-right: 20px;\n}\n/*# sourceMappingURL=home-btn.css.map */\n";
   }
 });
 
@@ -57,4 +57,4 @@ export {
   HomeBtn,
   init_home_btn3 as init_home_btn
 };
-//# sourceMappingURL=chunk-YTDDLWZO.js.map
+//# sourceMappingURL=chunk-5Y4HUIIF.js.map

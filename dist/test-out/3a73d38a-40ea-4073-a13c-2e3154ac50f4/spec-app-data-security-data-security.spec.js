@@ -1,7 +1,7 @@
 import {
   HomeBtn,
   init_home_btn
-} from "./chunk-6KHJ7XDR.js";
+} from "./chunk-OYP7D3SV.js";
 import {
   init_router,
   provideRouter
@@ -28,11 +28,11 @@ var init_data_security = __esm({
   }
 });
 
-// angular:jit:style:src/app/data-security/data-security.sass
+// angular:jit:style:src/app/data-security/data-security.scss
 var data_security_default2;
 var init_data_security2 = __esm({
-  "angular:jit:style:src/app/data-security/data-security.sass"() {
-    data_security_default2 = "/* src/app/data-security/data-security.sass */\nh1 {\n  font-size: 4rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding-left: 20px;\n  padding-right: 20px;\n}\np {\n  font-size: 1.5rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding-left: 20px;\n  padding-right: 20px;\n}\n/*# sourceMappingURL=data-security.css.map */\n";
+  "angular:jit:style:src/app/data-security/data-security.scss"() {
+    data_security_default2 = "/* src/app/data-security/data-security.scss */\nh1 {\n  font-size: 4rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding-left: 20px;\n  padding-right: 20px;\n}\np {\n  font-size: 1.5rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding-left: 20px;\n  padding-right: 20px;\n}\n/*# sourceMappingURL=data-security.css.map */\n";
   }
 });
 

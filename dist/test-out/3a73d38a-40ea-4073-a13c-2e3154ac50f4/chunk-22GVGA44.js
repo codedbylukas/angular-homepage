@@ -21,11 +21,11 @@ var init_box = __esm({
   }
 });
 
-// angular:jit:style:src/app/home/box/box.sass
+// angular:jit:style:src/app/home/box/box.scss
 var box_default2;
 var init_box2 = __esm({
-  "angular:jit:style:src/app/home/box/box.sass"() {
-    box_default2 = "/* src/app/home/box/box.sass */\nh1 {\n  color: #333;\n  cursor: context-menu;\n}\nh2 {\n  color: #555;\n  cursor: context-menu;\n  text-align: center;\n}\np {\n  margin: 0 0 10px;\n  cursor: context-menu;\n}\na {\n  display: inline-block;\n  margin: 10px;\n  padding: 10px 20px;\n  background-color: #007BFF;\n  color: white;\n  text-decoration: none;\n  border-radius: 5px;\n  transition: background-color 0.3s ease;\n}\n.container {\n  animation: slide-in-left 225ms linear;\n  max-width: 800px;\n  margin: auto;\n  background: #fff;\n  padding: 20px;\n  position: relative;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);\n}\n.profile-pic {\n  max-width: 150px;\n  height: auto;\n  border-radius: 8px;\n  margin: 20px 0;\n}\n.footer {\n  margin-top: 20px;\n  font-size: 0.9em;\n  color: rgba(119, 119, 119, 0.6549019608);\n}\n.footer:hover {\n  color: #777777;\n}\n.language {\n  animation: slide-in-right 225ms ease-in-out;\n  width: 50px;\n  height: 20px;\n  position: absolute;\n  right: 10px;\n  top: 10px;\n  cursor: pointer;\n}\n.language-de {\n  right: 55px;\n}\n.projects {\n  display: flex;\n  justify-content: center;\n  margin-top: 40px;\n}\n@keyframes slide-in-left {\n  from {\n    transform: translateX(-100vh);\n  }\n  to {\n    transform: translateX(0);\n  }\n}\n@keyframes slide-in-right {\n  from {\n    transform: translateX(100vh);\n  }\n  to {\n    transform: translateX(0);\n  }\n}\n/*# sourceMappingURL=box.css.map */\n";
+  "angular:jit:style:src/app/home/box/box.scss"() {
+    box_default2 = "/* src/app/home/box/box.scss */\nh1 {\n  color: #333;\n  cursor: context-menu;\n}\nh2 {\n  color: #555;\n  cursor: context-menu;\n  text-align: center;\n}\np {\n  margin: 0 0 10px;\n  cursor: context-menu;\n}\na {\n  display: inline-block;\n  margin: 10px;\n  padding: 10px 20px;\n  background-color: #007BFF;\n  color: white;\n  text-decoration: none;\n  border-radius: 5px;\n  transition: background-color 0.3s ease;\n}\n.container {\n  animation: slide-in-left 225ms linear;\n  max-width: 800px;\n  margin: auto;\n  background: #fff;\n  padding: 20px;\n  position: relative;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);\n}\n.profile-pic {\n  max-width: 150px;\n  height: auto;\n  border-radius: 8px;\n  margin: 20px 0;\n}\n.footer {\n  margin-top: 20px;\n  font-size: 0.9em;\n  color: rgba(119, 119, 119, 0.6549019608);\n}\n.footer:hover {\n  color: #777777;\n}\n.language {\n  animation: slide-in-right 225ms ease-in-out;\n  width: 50px;\n  height: 20px;\n  position: absolute;\n  right: 10px;\n  top: 10px;\n  cursor: pointer;\n}\n.language-de {\n  right: 55px;\n}\n.projects {\n  display: flex;\n  justify-content: center;\n  margin-top: 40px;\n}\n@keyframes slide-in-left {\n  from {\n    transform: translateX(-100vh);\n  }\n  to {\n    transform: translateX(0);\n  }\n}\n@keyframes slide-in-right {\n  from {\n    transform: translateX(100vh);\n  }\n  to {\n    transform: translateX(0);\n  }\n}\n/*# sourceMappingURL=box.css.map */\n";
   }
 });
 
@@ -71,4 +71,4 @@ export {
   Box,
   init_box3 as init_box
 };
-//# sourceMappingURL=chunk-H3HXPOJV.js.map
+//# sourceMappingURL=chunk-22GVGA44.js.map
