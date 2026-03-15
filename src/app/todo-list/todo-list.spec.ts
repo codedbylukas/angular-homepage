@@ -27,8 +27,12 @@ describe('TodoList', () => {
     expect(component.toggleTodo).toBeDefined();
     expect(typeof component.toggleTodo).toBe('function');
   });
-  it('should define function toggleTodo', () => {
-    expect(component.toggleTodo).toBeDefined();
-    expect(typeof component.toggleTodo).toBe('function');
+  it('should define function removeTodo', () => {
+    expect(component.removeTodo).toBeDefined();
+    expect(typeof component.removeTodo).toBe('function');
+  });
+  it('should define function updateHeadline', () => {
+    expect(component.updateHeadline).toBeDefined();
+    expect(typeof component.updateHeadline).toBe('function');
   });
 });
