@@ -1,0 +1,38 @@
+button {
+    background-color: #0ae2f1;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    width: 180px;
+    font-size: 40px;
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.half-center {
+    display: flex;
+    justify-content: center;
+}
+
+.end-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#currentFact {
+    background-color: #21f14ed0;
+    font-size: 20px;
+    border-radius: 15%;
+    z-index: 2;
+}

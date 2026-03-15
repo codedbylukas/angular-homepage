@@ -214,7 +214,7 @@ export const facts = [
   selector: 'app-fun-facts',
   imports: [HomeBtn],
   templateUrl: './fun-facts.html',
-  styleUrl: './fun-facts.sass',
+  styleUrl: './fun-facts.scss',
 })
 export class FunFacts {
   playAudio() {
