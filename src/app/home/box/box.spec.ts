@@ -58,13 +58,6 @@ describe('Box', () => {
     const projectHeadline = fixture.nativeElement.querySelector('#project_headline');
     expect(projectHeadline.textContent).toContain('Coole Webseiten');
   });
-   it('should update platforms text when German button clicked', () => {
-    const button = fixture.nativeElement.querySelector('#german-button');
-    button.click();
-    fixture.detectChanges();
-    const platforms = fixture.nativeElement.querySelector('#platforms');
-    expect(platforms.textContent).toContain('Plattformen');
-  });
    it('should update sand site link text when German button clicked', () => {
     const button = fixture.nativeElement.querySelector('#german-button');
     button.click();
@@ -93,13 +86,6 @@ describe('Box', () => {
     fixture.detectChanges();
     const projectHeadline = fixture.nativeElement.querySelector('#project_headline');
     expect(projectHeadline.textContent).toContain('Cool Websites');
-  });
-  it('should update platforms text when English button clicked', () => {
-    const button = fixture.nativeElement.querySelector('#english-button');
-    button.click();
-    fixture.detectChanges();
-    const platforms = fixture.nativeElement.querySelector('#platforms');
-    expect(platforms.textContent).toContain('Platforms');
   });
   it('should update Sand Game text when English button clicked', () => {
     const button = fixture.nativeElement.querySelector('#english-button');

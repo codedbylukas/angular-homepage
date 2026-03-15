@@ -26,4 +26,10 @@ describe('FunFacts', () => {
     expect(component.playAudio).toBeDefined();
     expect(typeof component.playAudio).toEqual('function');
   });
+  it('function should be called when buton is clickt', () => {
+    spyOn(component, "playAudio");
+    const button = fixture.nativeElement.querySelector('#button-click');
+    button.click();
+    expect(component.playAudio).toHaveBeenCalled();
+  });
 });
