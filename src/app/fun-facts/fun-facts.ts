@@ -226,6 +226,7 @@ export class FunFacts {
         playing = false;
       };
       audio.play();
+      document.getElementById("currentFact")!.textContent = facts[randomNumber];
     }
     else {
       playing = false;
