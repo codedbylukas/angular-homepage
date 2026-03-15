@@ -6,6 +6,9 @@
         Lukas
     </author>
     <content src="index.html" />
+    <platform name="android">
+        <icon src="res/icon.png" />
+    </platform>
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
 </widget>

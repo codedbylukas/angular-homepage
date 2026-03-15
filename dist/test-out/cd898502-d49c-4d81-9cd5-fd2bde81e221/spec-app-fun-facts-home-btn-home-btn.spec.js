@@ -1,7 +1,7 @@
 import {
   HomeBtn,
   init_home_btn
-} from "./chunk-UV2O47XH.js";
+} from "./chunk-W5LM2M2B.js";
 import {
   init_router,
   provideRouter
