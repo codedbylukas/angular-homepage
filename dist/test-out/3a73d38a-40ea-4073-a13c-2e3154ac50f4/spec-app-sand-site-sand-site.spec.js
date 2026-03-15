@@ -1,7 +1,7 @@
 import {
   HomeBtn,
   init_home_btn
-} from "./chunk-UAOZD4O4.js";
+} from "./chunk-GPVUKL7D.js";
 import {
   init_router,
   provideRouter
@@ -29,11 +29,11 @@ var init_sand_site = __esm({
   }
 });
 
-// angular:jit:style:src/app/sand-site/sand-site.sass
+// angular:jit:style:src/app/sand-site/sand-site.scss
 var sand_site_default2;
 var init_sand_site2 = __esm({
-  "angular:jit:style:src/app/sand-site/sand-site.sass"() {
-    sand_site_default2 = "/* src/app/sand-site/sand-site.sass */\n.confetti-piece {\n  position: absolute;\n  width: 5px;\n  height: 5px;\n  background-color: orange;\n  top: 0;\n  left: 50%;\n  opacity: 0.7;\n  border-radius: 50%;\n  animation: confetti-fall 1s linear infinite;\n  z-index: 1000;\n}\n.confetti-button {\n  padding: 10px 20px;\n  font-size: 16px;\n  background-color: #ffcc00;\n  border: none;\n  border-radius: 5px;\n  align-items: center;\n  cursor: pointer;\n  color: rgba(233, 233, 233, 0.9647058824);\n  font-weight: bold;\n}\n.center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}\napp-home-btn {\n  position: absolute;\n  bottom: 20px;\n}\n@keyframes confetti-fall {\n  from {\n    transform: translateY(0) rotate(0deg);\n  }\n  to {\n    transform: translateY(100vh) rotate(360deg);\n  }\n}\n/*# sourceMappingURL=sand-site.css.map */\n";
+  "angular:jit:style:src/app/sand-site/sand-site.scss"() {
+    sand_site_default2 = "/* src/app/sand-site/sand-site.scss */\n.confetti-piece {\n  position: absolute;\n  width: 5px;\n  height: 5px;\n  background-color: orange;\n  top: 0;\n  left: 50%;\n  opacity: 0.7;\n  border-radius: 50%;\n  animation: confetti-fall 1s linear infinite;\n  z-index: 1000;\n}\n.confetti-button {\n  padding: 10px 20px;\n  font-size: 16px;\n  background-color: #ffcc00;\n  border: none;\n  border-radius: 5px;\n  align-items: center;\n  cursor: pointer;\n  color: rgba(233, 233, 233, 0.9647058824);\n  font-weight: bold;\n}\n.center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}\napp-home-btn {\n  position: absolute;\n  bottom: 20px;\n}\n@keyframes confetti-fall {\n  from {\n    transform: translateY(0) rotate(0deg);\n  }\n  to {\n    transform: translateY(100vh) rotate(360deg);\n  }\n}\n/*# sourceMappingURL=sand-site.css.map */\n";
   }
 });
 

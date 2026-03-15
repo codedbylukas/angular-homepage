@@ -1,7 +1,7 @@
 import {
   Footer,
   init_footer
-} from "./chunk-EXCDQJFS.js";
+} from "./chunk-5CBEUZBE.js";
 import {
   init_router,
   provideRouter
