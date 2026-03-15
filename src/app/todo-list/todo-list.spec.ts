@@ -23,8 +23,12 @@ describe('TodoList', () => {
     expect(component.addtodo).toBeDefined();
     expect(typeof component.addtodo).toBe('function');
   });
-  it('should define function addtodo', () => {
-    expect(component.addtodo).toBeDefined();
-    expect(typeof component.addtodo).toBe('function');
+  it('should define function toggleTodo', () => {
+    expect(component.toggleTodo).toBeDefined();
+    expect(typeof component.toggleTodo).toBe('function');
+  });
+  it('should define function toggleTodo', () => {
+    expect(component.toggleTodo).toBeDefined();
+    expect(typeof component.toggleTodo).toBe('function');
   });
 });
