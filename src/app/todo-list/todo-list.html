@@ -1,1 +1,24 @@
-<p>todo-list works!</p>
+<h1 class="rainbow-text">Meine Todo-Liste</h1>
+<div class="center slide-in">
+  <input type="text" placeholder="Notiz eingeben..." #todofield required (keydown.enter)="addtodo()" />
+</div>
+<br />
+<div class="center slide-in">
+  <button (click)="addtodo()">Speichern</button>
+</div>
+<div class="center slide-in">
+  <br />
+  <button class="delate" (click)="delateTodolist()">
+    Ganze Liste löschen <img src="/assets/img/rubbish.png" class="rubbisch" alt="" />
+  </button>
+</div>
+<h2 #headline class="slide-in">Hier darunter ist die To-Do-Liste:</h2>
+<ol #todolist>
+  @for (todo of todos; track todo.id) {
+  <li>
+    <input type="checkbox" [checked]="todo.done" (change)="toggleTodo(todo)" />
+    <span [class.done]="todo.done">{{ todo.text }}</span>
+    <img src="/assets/img/rubbish.png" class="rubbisch" alt="" (click)="removeTodo(todo)" />
+  </li>
+  }
+</ol>

@@ -1,0 +1,93 @@
+:root
+  --rubbish: 20
+h1
+  display: flex
+  justify-content: center
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
+  font-size: 4rem
+
+h2
+  font-size: 3rem
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif
+  font-weight: 100
+  margin: 20px
+  display: flex
+  justify-content: center
+
+button
+  background-color: green
+  font-size: 40px
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif
+  border: none
+  border-radius: 2rem
+  padding: 20px
+  margin: 20px
+  cursor: pointer
+
+input
+  padding: 20px
+  margin: 20px
+  border-color: rgba(0, 0, 0, 0.233)
+  border-radius: 2rem
+
+ol
+  font-size: 20px
+  padding: 0px
+  list-style-type: none
+
+.center
+  display: flex
+  justify-content: center
+
+.slide-in
+  animation: slide-in 225ms linear
+
+.rainbow-text
+  animation: rainbow 3s linear infinite
+
+::placeholder
+  color: rgba(0, 0, 0, 0.233)
+  font-size: 20px
+
+.rubbisch
+  height: 40px
+  width: 40px
+  margin-left: 20px
+.delate
+  background-color: red
+
+.done
+  text-decoration: line-through
+  opacity: 0.5
+
+@keyframes slide-in
+  from
+    transform: translateX(-100%)
+
+  to
+    transform: translateX(0)
+
+@keyframes rainbow
+  0%
+    color: red
+
+  14%
+    color: orange
+
+  28%
+    color: yellow
+
+  42%
+    color: green
+
+  57%
+    color: cyan
+
+  71%
+    color: blue
+
+  85%
+    color: purple
+
+  100%
+    color: red
