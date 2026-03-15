@@ -40,9 +40,3 @@ describe('FunFacts', () => {
     expect(typeof audio).toEqual('undefined'); // Since it's not initialized yet
   });
 });
-
-// const button = fixture.nativeElement.querySelector('#english-button');
-// button.click();
-// fixture.detectChanges();
-// const sandSiteLink = fixture.nativeElement.querySelector('#fun-facts');
-// expect(sandSiteLink.textContent).toContain('Fun Facts');
