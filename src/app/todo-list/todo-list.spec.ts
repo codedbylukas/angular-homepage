@@ -20,4 +20,8 @@ describe('TodoList', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should define function addtodo', () => {
+    expect(component.addtodo).toBeDefined();
+    expect(typeof component.addtodo).toBe('function');
+  });
 });
