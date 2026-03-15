@@ -107,7 +107,7 @@ const facts = [
   "Der Saturn besitzt auffällige Ringe.",
   "Einige Vulkane liegen unter Wasser.",
   "Der Pazifik enthält über die Hälfte des Ozeanwassers.",
-  "Einige Tiere können Farbe wechseln.",
+  "Einige Tiere können ihre Farbe wechseln.",
   "Kühe haben beste Freunde und leiden unter Stress, wenn sie getrennt werden.",
   "In der Schweiz ist es illegal, nur ein einzelnes Meerschweinchen zu halten.",
   "Ein Gramm DNA kann theoretisch bis zu 215 Petabyte an Daten speichern.",
