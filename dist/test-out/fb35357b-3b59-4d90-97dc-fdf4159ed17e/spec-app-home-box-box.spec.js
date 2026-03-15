@@ -1,7 +1,7 @@
 import {
   Box,
   init_box
-} from "./chunk-RB2BXLWW.js";
+} from "./chunk-ND3XK333.js";
 import {
   init_router,
   provideRouter
