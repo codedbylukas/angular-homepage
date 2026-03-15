@@ -8,7 +8,7 @@ import { Box } from './box/box';
   standalone: true,
   imports: [RouterModule, Footer, Box],
   templateUrl: './home.html',
-  styleUrl: './home.sass',
+  styleUrl: './home.scss',
 })
 export class HomeComponent {
 

@@ -6,7 +6,7 @@ import { RouterLink, RouterModule } from "@angular/router";
   standalone: true,
   imports: [RouterLink, RouterModule],
   templateUrl: './box.html',
-  styleUrl: './box.sass',
+  styleUrl: './box.scss',
 })
 export class Box {
    translateToGerman() {
