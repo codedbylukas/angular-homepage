@@ -18,6 +18,17 @@ describe('My First Test', () => {
     cy.contains('Sand Spiel').click();
     cy.url().should('include', '/sand-site');
   });
+  it('Test if Lustige Fakten is able to Click it', () => {
+    cy.visit('/');
+    cy.contains('Lustige Fakten').click();
+    cy.url().should('include', '/fun-facts');
+  });
+  it('Test if ToDo Liste is able to Click it', () => {
+    cy.visit('/');
+    cy.contains('ToDo Liste').click();
+    cy.url().should('include', '/todo-list');
+    cy.visit("/")
+  });
 });
 
 // Lustige Fakten
