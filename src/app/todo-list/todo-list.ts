@@ -12,7 +12,7 @@ interface Todo {
   selector: 'app-todo-list',
   imports: [HomeBtn],
   templateUrl: './todo-list.html',
-  styleUrl: './todo-list.sass',
+  styleUrl: './todo-list.scss',
 })
 export class TodoList implements OnInit {
   @ViewChild('todofield', { static: true }) todofieldRef!: ElementRef<HTMLInputElement>;
