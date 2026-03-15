@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ng test
 ng build 
 rm -rf ./cordova/www/*
 cp -r ./dist/Angular_personal_homepage/browser/* ./cordova/www/
