@@ -8,9 +8,8 @@ describe('TodoList', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TodoList]
-    })
-    .compileComponents();
+      imports: [TodoList],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TodoList);
     component = fixture.componentInstance;
@@ -19,6 +18,10 @@ describe('TodoList', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+  it('should define function addtodo', () => {
+    expect(component.addtodo).toBeDefined();
+    expect(typeof component.addtodo).toBe('function');
   });
   it('should define function addtodo', () => {
     expect(component.addtodo).toBeDefined();
