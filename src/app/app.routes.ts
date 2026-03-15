@@ -10,5 +10,6 @@ export const routes: Routes = [
   { path: 'data-security', component: DataSecurityComponent },
   { path: 'sand-site', component: SandSite },
   { path: 'fun-facts', component: FunFacts},
-  { path : 'todo-list', component: TodoList}
+  { path : 'todo-list', component: TodoList},
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
