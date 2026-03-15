@@ -6,7 +6,7 @@ import { RouterLink, RouterModule } from "@angular/router";
   standalone: true,
   imports: [RouterLink, RouterModule],
   templateUrl: './home-btn.html',
-  styleUrl: './home-btn.sass',
+  styleUrl: './home-btn.scss',
 })
 export class HomeBtn {
 
