@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/home/home.sass"],
+  "sourcesContent": ["h1\n  font-size: 3rem\n  padding-left: 20px\n  padding-right: 20px\n  text-align: center\n\napp-footer\n  position: fixed\n  bottom: 0\n  left: 0\n  width: 100%"],
+  "mappings": ";AAAA;AACE,aAAA;AACA,gBAAA;AACA,iBAAA;AACA,cAAA;;AAEF;AACE,YAAA;AACA,UAAA;AACA,QAAA;AACA,SAAA;;",
+  "names": []
+}

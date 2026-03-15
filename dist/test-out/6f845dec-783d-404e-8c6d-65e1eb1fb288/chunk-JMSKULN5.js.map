@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:jit:template:src/app/fun-facts/home-btn/home-btn.html", "angular:jit:style:src/app/fun-facts/home-btn/home-btn.sass", "src/app/fun-facts/home-btn/home-btn.ts"],
+  "sourcesContent": ["<div>\n\t<button routerLink=\"/\">Home</button>\n</div>\n", "/* src/app/fun-facts/home-btn/home-btn.sass */\nbutton {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100px;\n  height: 40px;\n  background-color: #007bff;\n  border: none;\n  border-radius: 50%;\n  font-size: 60px;\n  padding: 140px;\n  padding-top: 40px;\n  padding-bottom: 40px;\n  color: rgba(245, 246, 250, 0.8);\n}\ndiv {\n  margin-top: 40px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding-left: 20px;\n  padding-right: 20px;\n}\n/*# sourceMappingURL=home-btn.css.map */\n", "import { Component } from '@angular/core';\nimport { RouterLink, RouterModule } from \"@angular/router\";\n\n@Component({\n  selector: 'app-home-btn',\n  standalone: true,\n  imports: [RouterLink, RouterModule],\n  templateUrl: './home-btn.html',\n  styleUrl: './home-btn.sass',\n})\nexport class HomeBtn {\n\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAA,IAAAA;AAAA,IAAAC,iBAAA;AAAA;AAAA,IAAAD,oBAAA;AAAA;AAAA;;;ICUa;;;;;;;AAVb;AACA;AASO,IAAM,UAAN,MAAME,SAAO;;AAAP,cAAO,WAAA;MAPnB,UAAU;QACT,UAAU;QACV,YAAY;QACZ,SAAS,CAAC,YAAY,YAAY;QAClC,UAAA;;OAED;OACY,OAAO;;;",
+  "names": ["home_btn_default", "init_home_btn", "HomeBtn"]
+}
