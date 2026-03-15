@@ -35,4 +35,8 @@ describe('TodoList', () => {
     expect(component.updateHeadline).toBeDefined();
     expect(typeof component.updateHeadline).toBe('function');
   });
+  it('should define function delateTodolist', () => {
+    expect(component.delateTodolist).toBeDefined();
+    expect(typeof component.delateTodolist).toBe('function');
+  });
 });
