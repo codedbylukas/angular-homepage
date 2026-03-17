@@ -1,6 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { HomeBtn } from './home-btn/home-btn';
+import { HomeBtn } from '../home-btn/home-btn';
 
 interface Todo {
   id: number;

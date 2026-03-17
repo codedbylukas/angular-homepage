@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { HomeBtn } from './home-btn/home-btn'
+import { HomeBtn } from '../home-btn/home-btn'
 
 let confetti_list: HTMLElement[] = [];
 @Component({
