@@ -14,11 +14,11 @@ describe('Text is here there', () => {
     cy.contains('Lustige Fakten');
     cy.contains('ToDo Liste');
     cy.contains('Datenschutz');
+    cy.contains('Rate Spiel');
   });
 });
 
 describe('Text is possibe to click it', () => {
-
   it('Test if Sand Game is able to Click it', () => {
     cy.visit('/');
     cy.contains('Sand Spiel').click();
@@ -40,6 +40,13 @@ describe('Text is possibe to click it', () => {
     cy.url().should('include', '/data-security');
     cy.visit("/")
   });
+  it('Test if Gessing game is able to Click it', () => {
+    cy.visit('/');
+    cy.contains('Rate Spiel').click();
+    cy.url().should('include', '/number-gessing-game');
+    cy.visit("/")
+  });
+  
 });
 describe('Img test', () => {
   it('Should check if the de image is loaded', () => {
