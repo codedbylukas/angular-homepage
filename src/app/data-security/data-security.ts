@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HomeBtn } from './home-btn/home-btn';
+import { HomeBtn } from '../home-btn/home-btn';
 
 @Component({
   selector: 'app-data-security',
