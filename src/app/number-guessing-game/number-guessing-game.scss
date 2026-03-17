@@ -1,7 +1,4 @@
 .container {
-    display: grid;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
 }
 h1 {
@@ -24,4 +21,13 @@ input {
 
 ::placeholder {
     font-size: 20px;
+}
+p {
+    font-weight: normal;
+    font-size: 16px;
+}
+.center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
