@@ -84,7 +84,7 @@ describe('Box', () => {
     button.click();
     fixture.detectChanges();
     const sandSiteLink = fixture.nativeElement.querySelector('#nuber-gessing-game');
-    expect(sandSiteLink.textContent).toContain('Gessing Game');
+    expect(sandSiteLink.textContent).toContain('Rate Spiel');
   });
   // Text Update English Translation
   it('should update headline text when English button clicked', () => {
