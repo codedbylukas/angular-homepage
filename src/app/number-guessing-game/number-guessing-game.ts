@@ -21,9 +21,7 @@ export class NumberGuessingGame {
       this.message = 'Bitte gib eine Zahl ein.';
       return;
     }
-
     this.attempts++;
-
     if (this.guess === this.randomNumber) {
       this.message = 'Richtig! Du hast die Zahl erraten.';
       this.gameWon = true;
