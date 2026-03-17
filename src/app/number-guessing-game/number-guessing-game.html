@@ -1,1 +1,19 @@
-<p>number-guessing-game works!</p>
+<div class="container">
+    <h1>Zahlenratespiel</h1>
+    <p>Ich habe mir eine Zahl zwischen 1 und 100 ausgedacht. Kannst du sie erraten?</p>
+
+    <div class="input-section">
+        <input type="number" min="1" max="100" id="guess" placeholder="Deine Vermutung" [(ngModel)]="guess">
+        <button (click)="checkGuess()">Raten</button>
+    </div>
+
+    <div class="message-section">
+        <p *ngIf="message" [class.correct]="message.includes('Richtig!')"
+            [class.wrong]="message.includes('zu hoch') || message.includes('zu niedrig')">
+            {{ message }}
+        </p>
+        <p *ngIf="attempts > 0">Anzahl der Versuche: {{ attempts }}</p>
+    </div>
+
+    <button *ngIf="gameWon" (click)="resetGame()">Neues Spiel</button>
+</div>
