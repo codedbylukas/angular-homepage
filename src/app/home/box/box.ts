@@ -15,6 +15,7 @@ export class Box {
     document.getElementById("sand-site-link")!.textContent = "Sand Spiel";
     document.getElementById("fun-facts")!.textContent = "Lustige Fakten";
     document.getElementById('todo-list')!.textContent = "ToDo Liste";
+    document.getElementById('nuber-gessing-game')!.textContent = "Rate Spiel";
   }
   translateToEnglish() {
     document.getElementById("headline")!.textContent = "Hello, I'm Lukas";
@@ -22,5 +23,6 @@ export class Box {
     document.getElementById("sand-site-link")!.textContent = "Sand Game";
     document.getElementById("fun-facts")!.textContent = "Fun Facts";
     document.getElementById('todo-list')!.textContent = "ToDo list";
+    document.getElementById('nuber-gessing-game')!.textContent = "Gessing Game";
   }
 }
