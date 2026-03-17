@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HomeBtn } from './home-btn/home-btn';
+import { HomeBtn } from '../home-btn/home-btn';
 
 export let playing: boolean = false;
 export let audio: HTMLAudioElement;
