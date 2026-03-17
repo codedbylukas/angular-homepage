@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { HomeBtn } from './home-btn/home-btn';
 
 @Component({
   selector: 'app-number-guessing-game',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, HomeBtn],
   templateUrl: './number-guessing-game.html',
   styleUrl: './number-guessing-game.scss',
 })

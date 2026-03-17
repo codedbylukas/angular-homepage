@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NumberGuessingGame } from './number-guessing-game';
+import { HomeBtn } from './home-btn/home-btn';
+import { ActivatedRoute } from '@angular/router';
 
 describe('NumberGuessingGame', () => {
   let component: NumberGuessingGame;
@@ -7,7 +9,13 @@ describe('NumberGuessingGame', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NumberGuessingGame]
+      imports: [NumberGuessingGame, HomeBtn],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {} // mock activated route
+        }
+      ]
     })
       .compileComponents();
 
