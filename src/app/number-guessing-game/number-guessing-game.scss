@@ -16,3 +16,12 @@ button {
     font-size: 30px;
     margin-left: 40px;
 }
+input {
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+}
+
+::placeholder {
+    font-size: 20px;
+}
