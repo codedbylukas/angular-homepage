@@ -4,37 +4,53 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 module.exports = {
   packagerConfig: {
     asar: true,
-    // Hier kannst du später ein Icon hinzufügen:
-    // icon: './path/to/icon' 
+    executableName: 'angular-homepage',
+    // icon: './images/icon', // Empfehlung: Pfad ohne Endung angeben
   },
   rebuildConfig: {},
   makers: [
+    // --- WINDOWS ---
     {
       name: '@electron-forge/maker-squirrel',
       config: {
-        // Name der .exe für Windows
         name: 'angular_homepage',
+        setupExe: 'AngularHomepageSetup.exe',
       },
     },
     {
+      // ZIP als Backup für Windows (funktioniert auf Kali ohne Mono-Probleme)
       name: '@electron-forge/maker-zip',
-      platforms: ['darwin', 'linux'], // ZIP als Backup für Linux ist immer gut
+      platforms: ['win32'], 
+    },
+
+    // --- MACOS ---
+    {
+      name: '@electron-forge/maker-dmg',
+      config: {
+        format: 'ULFO',
+      },
+    },
+
+    // --- LINUX & MACOS ZIP ---
+    {
+      name: '@electron-forge/maker-zip',
+      platforms: ['darwin', 'linux'],
     },
     {
+      // DEB Paket für Kali
       name: '@electron-forge/maker-deb',
       config: {
         options: {
-          maintainer: 'Kali User',
-          homepage: 'https://deine-homepage.de',
-          // Verhindert Fehler bei fehlenden Icons oder Beschreibungen
+          name: 'angular-homepage',
+          productName: 'Angular Homepage',
+          maintainer: 'Lukas',
           description: 'Meine Angular Homepage App',
           categories: ['Utility'],
+          section: 'utils',
+          priority: 'optional',
         },
       },
     },
-    /* RPM wurde entfernt, da 'rpmbuild' auf Kali/Debian 
-      zu Berechtigungsfehlern mit der sqlite-Datenbank führt.
-    */
   ],
   plugins: [
     {
