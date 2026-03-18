@@ -6,6 +6,12 @@
 /bazel-out
 /dist
 
+# Build-Ordner ignorieren
+for_installation/Linux/x64/
+for_installation/win/32
+cordova/platforms/
+cordova/plugins/
+
 # Node
 /node_modules
 npm-debug.log
