@@ -15,7 +15,7 @@ interface Todo {
   styleUrl: './todo-list.scss',
 })
 export class TodoList implements OnInit {
-  headline = "Hier darunter ist die To-Do-Liste:";
+  headline = "Hier darunter ist die To-Do-Liste: ";
   @ViewChild('todofield', { static: true }) todofieldRef!: ElementRef<HTMLInputElement>;
 
   todos: Todo[] = [];
