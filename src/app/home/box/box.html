@@ -1,13 +1,13 @@
 <div class="container">
     <img (click)="translateToGerman()" src="assets/img/de.svg" id="german-button" class="language language-de" alt="DE">
     <img (click)="translateToEnglish()" src="assets/img/us.svg" id="english-button" class="language" alt="US">
-    <h1 id="headline">Hallo, ich bin Lukas</h1>
-    <h2 id="project_headline">Coole Webseiten</h2>
+    <h1 id="headline">{{ text.headline }}</h1>
+    <h2 id="project_headline">{{ text.project_headline }}</h2>
     <div class="projects">
-        <a routerLink="/sand-site" id="sand-site-link">Sand Spiel</a>
-        <a routerLink="/fun-facts" id="fun-facts">Lustige Fakten</a>
-        <a routerLink="/todo-list" id="todo-list">ToDo Liste</a>
-        <a routerLink="/number-gessing-game" id="nuber-gessing-game">Rate Spiel</a>
+        <a routerLink="/sand-site" id="sand-site-link">{{ text.sand_site_link }}</a>
+        <a routerLink="/fun-facts" id="fun-facts">{{ text.fun_facts }}</a>
+        <a routerLink="/todo-list" id="todo-list">{{ text.todo_list }}</a>
+        <a routerLink="/number-gessing-game" id="nuber-gessing-game">{{ text.nuber_gessing_game }}</a>
     </div> 
     <div class="footer" id="copyright">
         <p>&copy; 2026 <i>Lukas</i></p>

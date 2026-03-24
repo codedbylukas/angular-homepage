@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterModule } from "@angular/router";
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-box',
@@ -9,20 +9,32 @@ import { RouterLink, RouterModule } from "@angular/router";
   styleUrl: './box.scss',
 })
 export class Box {
-   translateToGerman() {
-    document.getElementById("headline")!.textContent = "Hallo, ich bin Lukas";
-    document.getElementById("project_headline")!.textContent = "Coole Webseiten";
-    document.getElementById("sand-site-link")!.textContent = "Sand Spiel";
-    document.getElementById("fun-facts")!.textContent = "Lustige Fakten";
-    document.getElementById('todo-list')!.textContent = "ToDo Liste";
-    document.getElementById('nuber-gessing-game')!.textContent = "Rate Spiel";
+  text = {
+    headline: 'Hallo, ich bin Lukas',
+    project_headline: 'Coole Webseiten',
+    sand_site_link: 'Sand Spiel',
+    fun_facts: 'Lustige Fakten',
+    todo_list: 'ToDo Liste',
+    nuber_gessing_game: 'Rate Spiel',
+  };
+  translateToGerman() {
+    this.text = {
+      headline: 'Hallo, ich bin Lukas',
+      project_headline: 'Coole Webseiten',
+      sand_site_link: 'Sand Spiel',
+      fun_facts: 'Lustige Fakten',
+      todo_list: 'ToDo Liste',
+      nuber_gessing_game: 'Rate Spiel',
+    };
   }
   translateToEnglish() {
-    document.getElementById("headline")!.textContent = "Hello, I'm Lukas";
-    document.getElementById("project_headline")!.textContent = "Cool Websites";
-    document.getElementById("sand-site-link")!.textContent = "Sand Game";
-    document.getElementById("fun-facts")!.textContent = "Fun Facts";
-    document.getElementById('todo-list')!.textContent = "ToDo list";
-    document.getElementById('nuber-gessing-game')!.textContent = "Gessing Game";
+    this.text = {
+    headline: "Hello, I'm Lukas",
+    project_headline: 'Cool Websites',
+    sand_site_link: 'Sand Game',
+    fun_facts: 'Fun Facts',
+    todo_list: 'ToDo list',
+    nuber_gessing_game: 'Gessing Game'
+      }
   }
 }
