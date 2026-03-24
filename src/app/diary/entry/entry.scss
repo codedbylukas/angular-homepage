@@ -1,0 +1,27 @@
+.box {
+  margin: 20px;
+  cursor: context-menu;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: slide-in-left 225ms linear;
+  padding: 20px;
+  border-radius: 2%;
+
+}
+h2 {
+  text-align: center;
+}
+p {
+  font-weight: normal;
+  font-size: 18px;
+}
+.date {
+  font-weight: lighter;
+}
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100vh);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
