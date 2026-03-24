@@ -29,12 +29,12 @@ export class Box {
   }
   translateToEnglish() {
     this.text = {
-    headline: "Hello, I'm Lukas",
-    project_headline: 'Cool Websites',
-    sand_site_link: 'Sand Game',
-    fun_facts: 'Fun Facts',
-    todo_list: 'ToDo list',
-    nuber_gessing_game: 'Gessing Game'
-      }
+      headline: "Hello, I'm Lukas",
+      project_headline: 'Cool Websites',
+      sand_site_link: 'Sand Game',
+      fun_facts: 'Fun Facts',
+      todo_list: 'ToDo list',
+      nuber_gessing_game: 'Gessing Game',
+    };
   }
 }
