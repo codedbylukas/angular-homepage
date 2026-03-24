@@ -40,7 +40,6 @@ export class TodoList implements OnInit {
     }
     this.updateHeadline();
   }
-
   addtodo() {
     const todofield = this.todofieldRef.nativeElement;
     const text = todofield.value.trim();
@@ -51,7 +50,6 @@ export class TodoList implements OnInit {
     this.save();
     this.updateHeadline();
   }
-
   toggleTodo(todo: Todo) {
     todo.done = !todo.done;
     this.save();
