@@ -12,7 +12,7 @@
     Ganze Liste löschen <img src="/assets/img/rubbish.png" class="rubbisch" alt="" />
   </button>
 </div>
-<h2 #headline class="slide-in">Hier darunter ist die To-Do-Liste:</h2>
+<h2 class="slide-in">{{ headline }}</h2>
 <ol #todolist>
   @for (todo of todos; track todo.id) {
   <li>
