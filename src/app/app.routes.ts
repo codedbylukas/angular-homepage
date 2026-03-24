@@ -5,6 +5,7 @@ import { SandSite } from './sand-site/sand-site';
 import { FunFacts } from './fun-facts/fun-facts';
 import { TodoList } from './todo-list/todo-list';
 import { NumberGuessingGame } from './number-guessing-game/number-guessing-game';
+import { Diary } from './diary/diary';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,5 +14,6 @@ export const routes: Routes = [
   { path: 'fun-facts', component: FunFacts },
   { path: 'todo-list', component: TodoList },
   { path: 'number-gessing-game', component: NumberGuessingGame },
+  { path: 'diary', component: Diary },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
