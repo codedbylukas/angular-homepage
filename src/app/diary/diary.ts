@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Entry } from './entry/entry';
 
 @Component({
   selector: 'app-diary',
-  imports: [],
+  imports: [Entry],
   templateUrl: './diary.html',
   styleUrl: './diary.scss',
 })
