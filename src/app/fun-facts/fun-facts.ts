@@ -217,6 +217,7 @@ export const facts = [
   styleUrl: './fun-facts.scss',
 })
 export class FunFacts {
+  current_fackt = "Clicke den anderen Button um den Fackt zu sehen. "; 
   playAudio() {
     if (!playing) {
       playing = true;
@@ -226,7 +227,7 @@ export class FunFacts {
         playing = false;
       };
       audio.play();
-      document.getElementById("currentFact")!.textContent = facts[randomNumber];
+      this.current_fackt = facts[randomNumber];
     }
     else {
       playing = false;
