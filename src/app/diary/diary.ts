@@ -68,12 +68,16 @@ export class Diary implements OnInit {
     try {
       // 2. Aktuelle ID holen oder bei 0 starten
       const currentId = Number(localStorage.getItem('diary_id') || '0');
-
+      let title = prompt("Titel");
+      let content = prompt("Inhalt");
+      if (title == null || content == null) {
+        return;
+      }
       const newEntry: DiaryEntry = {
         id: currentId,
         date: this.get_date(),
-        title: 'Neuer Eintrag',
-        content: 'Inhalt hier...',
+        title: title,
+        content: content,
       };
 
       // 3. Speichern mit korrektem "this" oder lokaler Variable
