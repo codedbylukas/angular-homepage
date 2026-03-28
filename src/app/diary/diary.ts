@@ -79,5 +79,10 @@ export class Diary implements OnInit {
       this.diaries = [];
       this.id = 0;
     }
+
+  }
+  updateGUI() {
+    this.loadDiaries();
   }
 }
+

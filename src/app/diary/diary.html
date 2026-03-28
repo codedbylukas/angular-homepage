@@ -15,6 +15,7 @@
     [text]="diary.content"
     [id]="diary.id"
     [date]="diary.date"
+    (click)="updateGUI()"
   ></app-entry>
 } @empty {
   <p class="text-center">Noch keine Einträge vorhanden.</p>
