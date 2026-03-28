@@ -1,14 +1,13 @@
-import { Component, Input} from '@angular/core';
-import { HomeBtn } from '../../home-btn/home-btn';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-entry',
-  imports: [ HomeBtn ],
+  imports: [],
   templateUrl: './entry.html',
   styleUrl: './entry.scss',
 })
 export class Entry {
-  @Input() title: string ='';
-  @Input() text: string ='';
-  @Input() date: string ='';
+  @Input() title: string = '';
+  @Input() text: string = '';
+  @Input() date: string = '';
 }

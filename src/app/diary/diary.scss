@@ -22,6 +22,9 @@ img {
   transition: transform 0.2s ease-in-out;
   position: absolute;
 }
+.text-center {
+  text-align: center;
+}
 img:hover {
   transform: scale(1.1);
 }
