@@ -10,7 +10,12 @@
 </h1>
 
 @for (diary of diaries; track diary.id) {
-  <app-entry [title]="diary.title" [text]="diary.content" [date]="diary.date"></app-entry>
+  <app-entry
+    [title]="diary.title"
+    [text]="diary.content"
+    [id]="diary.id"
+    [date]="diary.date"
+  ></app-entry>
 } @empty {
   <p class="text-center">Noch keine Einträge vorhanden.</p>
 }
