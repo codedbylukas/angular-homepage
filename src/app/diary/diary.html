@@ -1,6 +1,7 @@
 <h1>
   Willkommen zu deinem Tagebuch
-  <button (click)="addDiary()">+</button>
+  <button (click)="addDiary()">+</button> 
+  <img src="/assets/img/rubbish.png" alt="Del">
 </h1>
 <ng-container *ngFor="let diary of diaries">
   <app-entry [title]="diary.title" [text]="diary.content" [date]="diary.date"></app-entry>
