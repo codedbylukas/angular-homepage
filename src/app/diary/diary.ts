@@ -44,7 +44,6 @@ export class Diary implements OnInit {
 
   addDiary() {
     try {
-      // 2. Aktuelle ID holen oder bei 0 starten
       const currentId = Number(localStorage.getItem('diary_id') || '0');
       let title = prompt('Titel');
       let content = prompt('Inhalt');
