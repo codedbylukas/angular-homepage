@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Entry } from './entry/entry';
+import { CommonModule } from '@angular/common';
 interface DiaryEntry {
   id: number;
   date: string;
@@ -10,7 +11,7 @@ interface DiaryEntry {
 @Component({
   selector: 'app-diary',
   standalone: true,
-  imports: [Entry],
+  imports: [Entry, CommonModule],
   templateUrl: './diary.html',
   styleUrl: './diary.scss',
 })

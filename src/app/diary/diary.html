@@ -3,5 +3,5 @@
   <button (click)="addDiary()">+</button>
 </h1>
 <ng-container *ngFor="let diary of diaries">
-  <app-entry [title]="diary.title" [text]="diary.text" [date]="diary.date"></app-entry>
+  <app-entry [title]="diary.title" [text]="diary.content" [date]="diary.date"></app-entry>
 </ng-container>
