@@ -1,2 +1,12 @@
+<<<<<<< HEAD
 <h1>Willkommen zu deinem Tagebuch</h1>
 <app-entry title="a" text="a" date="sad"></app-entry>
+=======
+<h1>
+  Willkommen zu deinem Tagebuch
+  <button (click)="addDiary()">+</button>
+</h1>
+<ng-container *ngFor="let diary of diaries">
+  <app-entry [title]="diary.title" [text]="diary.text" [date]="diary.date"></app-entry>
+</ng-container>
+>>>>>>> 00fb37c (add)

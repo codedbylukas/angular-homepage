@@ -15,7 +15,7 @@ interface Todo {
   styleUrl: './todo-list.scss',
 })
 export class TodoList implements OnInit {
-  headline = "Hier darunter ist die To-Do-Liste: ";
+  headline = 'Hier darunter ist die To-Do-Liste: ';
   @ViewChild('todofield', { static: true }) todofieldRef!: ElementRef<HTMLInputElement>;
 
   todos: Todo[] = [];
@@ -28,7 +28,7 @@ export class TodoList implements OnInit {
 
   ngOnInit() {
     if (this.isBrowser) {
-      const saved = localStorage.getItem("todolist");
+      const saved = localStorage.getItem('todolist');
       if (saved) {
         try {
           this.todos = JSON.parse(saved);
@@ -46,7 +46,7 @@ export class TodoList implements OnInit {
     if (!text) return;
 
     this.todos.push({ id: this.nextId++, text, done: false });
-    todofield.value = "";
+    todofield.value = '';
     this.save();
     this.updateHeadline();
   }
@@ -56,16 +56,16 @@ export class TodoList implements OnInit {
   }
 
   removeTodo(todo: Todo) {
-    this.todos = this.todos.filter(t => t.id !== todo.id);
+    this.todos = this.todos.filter((t) => t.id !== todo.id);
     this.save();
     this.updateHeadline();
   }
 
   updateHeadline() {
     if (this.todos.length === 0) {
-      this.headline = "Hier darunter ist die To-Do-Liste:";
+      this.headline = 'Hier darunter ist die To-Do-Liste:';
     } else {
-      this.headline = "Die Notizen:";
+      this.headline = 'Die Notizen:';
     }
   }
 
@@ -77,7 +77,7 @@ export class TodoList implements OnInit {
 
   private save() {
     if (this.isBrowser) {
-      localStorage.setItem("todolist", JSON.stringify(this.todos));
+      localStorage.setItem('todolist', JSON.stringify(this.todos));
     }
   }
 }
