@@ -63,23 +63,25 @@ export class Diary implements OnInit {
         content: content,
       };
 
-      // 3. Speichern mit korrektem "this" oder lokaler Variable
       localStorage.setItem('diary' + currentId, JSON.stringify(newEntry));
       localStorage.setItem('diary_id', String(currentId + 1));
 
-      // UI aktualisieren
       this.diaries.push(newEntry);
     } catch (error) {
       console.error('Speichern fehlgeschlagen:', error);
     }
   }
   del_all_items_diary() {
-    if (confirm('Bist du sicher, dass du alle Einträge löschen möchtest?')) {
-      localStorage.clear();
-      this.diaries = [];
-      this.id = 0;
+    if (this.diaries.length == 0) {
+      return;
     }
-
+    else {
+      if (confirm('Bist du sicher, dass du alle Einträge löschen möchtest?')) {
+        localStorage.clear();
+        this.diaries = [];
+        this.id = 0;
+      }
+    }
   }
   updateGUI() {
     this.loadDiaries();
