@@ -5,7 +5,7 @@
   animation: slide-in-left 225ms linear;
   padding: 20px;
   border-radius: 2%;
-
+  position: relative;
 }
 h2 {
   text-align: center;
@@ -16,6 +16,15 @@ p {
 }
 .date {
   font-weight: lighter;
+}
+img {
+  height: 40px;
+}
+.img-div {
+  display: flex;
+  position: absolute;
+  right: 30px;
+  top: 50%;
 }
 @keyframes slide-in-left {
   from {
