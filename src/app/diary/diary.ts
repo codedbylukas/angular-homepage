@@ -1,15 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Entry } from './entry/entry';
-<<<<<<< HEAD
-import { stringify } from 'querystring';
-interface DiaryEntry {
-  id: number;
-  date: string; // save date as string
-  title: string;
-  content: string;
-}
-=======
-
 interface DiaryEntry {
   id: number;
   date: string;
@@ -17,7 +7,6 @@ interface DiaryEntry {
   content: string;
 }
 
->>>>>>> 00fb37c (add)
 @Component({
   selector: 'app-diary',
   standalone: true,
@@ -25,19 +14,6 @@ interface DiaryEntry {
   templateUrl: './diary.html',
   styleUrl: './diary.scss',
 })
-<<<<<<< HEAD
-export class Diary {
-  get_date() :string { 
-    const now: Date = new Date();
-    const day: string = String(now.getDate()).padStart(2, '0');
-    const month: string = String(now.getMonth() + 1).padStart(2, '0');
-    const year: number = now.getFullYear();
-    let formattedDate: string = `${day}.${month}.${year}`;
-    return formattedDate;
-  }
-}
-=======
-
 export class Diary implements OnInit {
   diaries: DiaryEntry[] = [];
   id: number = 0;
@@ -68,8 +44,8 @@ export class Diary implements OnInit {
     try {
       // 2. Aktuelle ID holen oder bei 0 starten
       const currentId = Number(localStorage.getItem('diary_id') || '0');
-      let title = prompt("Titel");
-      let content = prompt("Inhalt");
+      let title = prompt('Titel');
+      let content = prompt('Inhalt');
       if (title == null || content == null) {
         return;
       }
@@ -87,8 +63,7 @@ export class Diary implements OnInit {
       // UI aktualisieren
       this.diaries.push(newEntry);
     } catch (error) {
-      console.error("Speichern fehlgeschlagen:", error);
+      console.error('Speichern fehlgeschlagen:', error);
     }
   }
 }
->>>>>>> 00fb37c (add)
