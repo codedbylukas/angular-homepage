@@ -1,4 +1,4 @@
-import { afterNextRender, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Entry } from './entry/entry';
 import { CommonModule } from '@angular/common';
 import { HomeBtn } from "../home-btn/home-btn";
