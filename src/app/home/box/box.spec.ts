@@ -16,7 +16,7 @@ describe('Box', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-  
+
   // Component Created
   it('should create', () => {
     expect(component).toBeTruthy();
@@ -51,40 +51,47 @@ describe('Box', () => {
     const headline = fixture.nativeElement.querySelector('#headline');
     expect(headline.textContent).toContain('Hallo, ich bin Lukas');
   });
-   it('should update project headline text when German button clicked', () => {
+  it('should update project headline text when German button clicked', () => {
     const button = fixture.nativeElement.querySelector('#german-button');
     button.click();
     fixture.detectChanges();
     const projectHeadline = fixture.nativeElement.querySelector('#project_headline');
     expect(projectHeadline.textContent).toContain('Coole Webseiten');
   });
-   it('should update sand site link text when German button clicked', () => {
+  it('should update sand site link text when German button clicked', () => {
     const button = fixture.nativeElement.querySelector('#german-button');
     button.click();
     fixture.detectChanges();
     const sandSiteLink = fixture.nativeElement.querySelector('#sand-site-link');
     expect(sandSiteLink.textContent).toContain('Sand Spiel');
   });
-   it('should update Fun Facts link text when German button clicked', () => {
+  it('should update Fun Facts link text when German button clicked', () => {
     const button = fixture.nativeElement.querySelector('#german-button');
     button.click();
     fixture.detectChanges();
     const sandSiteLink = fixture.nativeElement.querySelector('#fun-facts');
     expect(sandSiteLink.textContent).toContain('Lustige Fakten');
   });
-   it('should update ToDo list link text when German button clicked', () => {
+  it('should update ToDo list link text when German button clicked', () => {
     const button = fixture.nativeElement.querySelector('#german-button');
     button.click();
     fixture.detectChanges();
     const sandSiteLink = fixture.nativeElement.querySelector('#todo-list');
     expect(sandSiteLink.textContent).toContain('ToDo Liste');
   });
-   it('should update Gessing Game link text when German button clicked', () => {
+  it('should update Gessing Game link text when German button clicked', () => {
     const button = fixture.nativeElement.querySelector('#german-button');
     button.click();
     fixture.detectChanges();
     const sandSiteLink = fixture.nativeElement.querySelector('#nuber-gessing-game');
     expect(sandSiteLink.textContent).toContain('Rate Spiel');
+  });
+  it('should update Diary link text when German button clicked', () => {
+    const button = fixture.nativeElement.querySelector('#german-button');
+    button.click();
+    fixture.detectChanges();
+    const sandSiteLink = fixture.nativeElement.querySelector('#diary');
+    expect(sandSiteLink.textContent).toContain('Tagebuch');
   });
   // Text Update English Translation
   it('should update headline text when English button clicked', () => {
@@ -108,14 +115,14 @@ describe('Box', () => {
     const sandSiteLink = fixture.nativeElement.querySelector('#sand-site-link');
     expect(sandSiteLink.textContent).toContain('Sand Game');
   });
-    it('should update Fun Facts text when English button clicked', () => {
+  it('should update Fun Facts text when English button clicked', () => {
     const button = fixture.nativeElement.querySelector('#english-button');
     button.click();
     fixture.detectChanges();
     const sandSiteLink = fixture.nativeElement.querySelector('#fun-facts');
     expect(sandSiteLink.textContent).toContain('Fun Facts');
   });
-    it('should update ToDo list text when English button clicked', () => {
+  it('should update ToDo list text when English button clicked', () => {
     const button = fixture.nativeElement.querySelector('#english-button');
     button.click();
     fixture.detectChanges();
@@ -128,5 +135,12 @@ describe('Box', () => {
     fixture.detectChanges();
     const sandSiteLink = fixture.nativeElement.querySelector('#nuber-gessing-game');
     expect(sandSiteLink.textContent).toContain('Gessing Game');
+  });
+  it('should update Diary text when English button clicked', () => {
+    const button = fixture.nativeElement.querySelector('#english-button');
+    button.click();
+    fixture.detectChanges();
+    const sandSiteLink = fixture.nativeElement.querySelector('#diary');
+    expect(sandSiteLink.textContent).toContain('Diary');
   });
 });
