@@ -17,11 +17,6 @@ interface DiaryEntry {
   styleUrl: './diary.scss',
 })
 export class Diary implements OnInit {
-  constructor() {
-    afterNextRender(() => {
-      this.loadDiaries();
-    });
-  }
   diaries: DiaryEntry[] = [];
   id: number = 0;
   ngOnInit() {
