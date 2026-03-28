@@ -9,7 +9,7 @@
 # own folders
 
 /cordova/www/*
-electron/src/*
+/electron/src/*
 
 # Build-Ordner ignorieren
 for_installation/Linux/x64/
