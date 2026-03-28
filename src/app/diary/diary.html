@@ -1,8 +1,11 @@
 <h1>
   Willkommen zu deinem Tagebuch
   <button (click)="addDiary()">+</button> 
-  <img src="/assets/img/rubbish.png" alt="Del">
+  <img (click)="del_all_items_diary()" src="/assets/img/rubbish.png" alt="Löschen" style="cursor: pointer;">
 </h1>
-<ng-container *ngFor="let diary of diaries">
+
+@for (diary of diaries; track diary.id) {
   <app-entry [title]="diary.title" [text]="diary.content" [date]="diary.date"></app-entry>
-</ng-container>
+} @empty {
+  <p>Noch keine Einträge vorhanden.</p>
+}

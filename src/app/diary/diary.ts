@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { afterNextRender, Component, OnInit } from '@angular/core';
 import { Entry } from './entry/entry';
 import { CommonModule } from '@angular/common';
 interface DiaryEntry {
@@ -16,6 +16,11 @@ interface DiaryEntry {
   styleUrl: './diary.scss',
 })
 export class Diary implements OnInit {
+  constructor() {
+    afterNextRender(() => {
+      this.loadDiaries();
+    });
+  }
   diaries: DiaryEntry[] = [];
   id: number = 0;
   ngOnInit() {
@@ -65,6 +70,13 @@ export class Diary implements OnInit {
       this.diaries.push(newEntry);
     } catch (error) {
       console.error('Speichern fehlgeschlagen:', error);
+    }
+  }
+  del_all_items_diary() {
+    if (confirm('Bist du sicher, dass du alle Einträge löschen möchtest?')) {
+      localStorage.clear();
+      this.diaries = [];
+      this.id = 0;
     }
   }
 }
