@@ -52,7 +52,7 @@ a {
   color: #777777;
 }
 .language {
-  animation: slide-in-right 225ms ease-in-out;
+  animation: slide-in-right 225ms linear;
   width: 50px;
   height: 20px;
   position: absolute;
@@ -88,4 +88,8 @@ a {
     transform: translateX(0);
   } 
 } 
+
+.two {
+  margin-top: 10px;
+}
   

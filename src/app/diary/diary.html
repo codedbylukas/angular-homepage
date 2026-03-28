@@ -1,0 +1,23 @@
+<h1>
+  Willkommen zu deinem Tagebuch
+  <button (click)="addDiary()">+</button>
+  <img
+    (click)="del_all_items_diary()"
+    src="/assets/img/rubbish.png"
+    alt="Löschen"
+    style="cursor: pointer"
+  />
+</h1>
+
+@for (diary of diaries; track diary.id) {
+  <app-entry
+    [title]="diary.title"
+    [text]="diary.content"
+    [id]="diary.id"
+    [date]="diary.date"
+    (click)="updateGUI()"
+  ></app-entry>
+} @empty {
+  <p class="text-center">Noch keine Einträge vorhanden.</p>
+}
+<app-home-btn></app-home-btn>

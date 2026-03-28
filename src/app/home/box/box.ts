@@ -16,6 +16,7 @@ export class Box {
     fun_facts: 'Lustige Fakten',
     todo_list: 'ToDo Liste',
     nuber_gessing_game: 'Rate Spiel',
+    diary: 'Tagebuch',
   };
   translateToGerman() {
     this.text = {
@@ -25,6 +26,7 @@ export class Box {
       fun_facts: 'Lustige Fakten',
       todo_list: 'ToDo Liste',
       nuber_gessing_game: 'Rate Spiel',
+      diary: 'Tagebuch',
     };
   }
   translateToEnglish() {
@@ -35,6 +37,7 @@ export class Box {
       fun_facts: 'Fun Facts',
       todo_list: 'ToDo list',
       nuber_gessing_game: 'Gessing Game',
+      diary: 'Diary',
     };
   }
 }

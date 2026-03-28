@@ -6,6 +6,11 @@
 /bazel-out
 /dist
 
+# own folders
+
+/cordova/www/*
+/electron/src/*
+
 # Build-Ordner ignorieren
 for_installation/Linux/x64/
 for_installation/win/32
