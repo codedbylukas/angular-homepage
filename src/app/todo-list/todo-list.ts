@@ -70,9 +70,11 @@ export class TodoList implements OnInit {
   }
 
   delateTodolist() {
-    this.todos = [];
-    this.save();
-    this.updateHeadline();
+    if (confirm('Bist du sicher, dass du die gesamte To-Do-Liste löschen möchtest?')) {
+      this.todos = [];
+      this.save();
+      this.updateHeadline();
+    }
   }
 
   private save() {
