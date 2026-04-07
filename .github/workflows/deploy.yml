@@ -5,6 +5,10 @@ on:
     branches:
       - main # Default Branch
 
+  pull_request:
+    branches:
+      - main # Default Branch
+
 permissions:
   contents: read
   pages: write
@@ -35,7 +39,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Pfad zum Build-Output (meist dist/<project-name>/browser)
           path: dist/Angular_personal_homepage/browser
 
       - name: Deploy to GitHub Pages
