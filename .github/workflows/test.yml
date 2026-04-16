@@ -1,0 +1,39 @@
+name: Angular Unit Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    # Der Runner nutzt nun die Betriebssysteme aus der Matrix
+    runs-on: ${{ matrix.os }}
+    
+    strategy:
+      # Verhindert, dass alle anderen Jobs abgebrochen werden, falls einer fehlschlägt
+      fail-fast: false 
+      matrix:
+        # Hier definieren wir die Betriebssysteme (Linux, Windows, macOS)
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        # Hier definieren wir die Node.js-Versionen (18 = älter, 20 = solide, 22 = neu)
+        node-version: [18, 20, 22]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Der Name zeigt im GitHub-Interface an, welche Version gerade getestet wird
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Unit Tests
+        run: npm run test -- --watch=false --browsers=ChromeHeadless
+        
