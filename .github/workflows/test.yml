@@ -18,7 +18,7 @@ jobs:
         # Hier definieren wir die Betriebssysteme (Linux, Windows, macOS)
         os: [ubuntu-latest, windows-latest, macos-latest]
         # Hier definieren wir die Node.js-Versionen (18 = älter, 20 = solide, 22 = neu)
-        node-version: [20, 21, 22]
+        node-version: [20, 22, 24]
 
     steps:
       - name: Checkout Repository
