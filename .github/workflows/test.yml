@@ -19,7 +19,7 @@ jobs:
       fail-fast: false 
       matrix:
         # Hier definieren wir die Betriebssysteme (Linux, Windows, macOS)
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ ubuntu-latest, windows-latest, macos-latest, ubuntu-24.04, ubuntu-22.04, windows-2025, windows-2022, windows-2019, macos-15, macos-14, macos-13 ]
 
         node-version: [20, 22, 24]
 
