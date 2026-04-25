@@ -25,6 +25,10 @@ describe('Diary', () => {
     component.ngOnInit();
     expect(component.loadDiaries).toHaveBeenCalled();
   });
+  it('should create get_date function', () => {
+    expect(component.get_date).toBeDefined();
+    expect(typeof component.get_date).toBe('function');
+  });
   it('should create loadDiaries function', () => {
     expect(component.loadDiaries).toBeDefined();
     expect(typeof component.loadDiaries).toBe('function');
