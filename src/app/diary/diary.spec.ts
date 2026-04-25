@@ -33,6 +33,10 @@ describe('Diary', () => {
     expect(component.loadDiaries).toBeDefined();
     expect(typeof component.loadDiaries).toBe('function');
   });
+  it('should create addDiary function', () => {
+    expect(component.addDiary).toBeDefined();
+    expect(typeof component.addDiary).toBe('function');
+  });
   it('should return current date in correct format', () => {
     const date = component.get_date();
     const regex = /^\d{2}\.\d{2}\.\d{4}$/;
