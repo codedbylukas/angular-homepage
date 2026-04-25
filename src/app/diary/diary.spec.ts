@@ -37,6 +37,10 @@ describe('Diary', () => {
     expect(component.addDiary).toBeDefined();
     expect(typeof component.addDiary).toBe('function');
   });
+  it('should create del_all_items_diary function', () => {
+    expect(component.del_all_items_diary).toBeDefined();
+    expect(typeof component.del_all_items_diary).toBe('function');
+  });
   it('should return current date in correct format', () => {
     const date = component.get_date();
     const regex = /^\d{2}\.\d{2}\.\d{4}$/;
