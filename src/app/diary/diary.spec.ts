@@ -25,6 +25,10 @@ describe('Diary', () => {
     component.ngOnInit();
     expect(component.loadDiaries).toHaveBeenCalled();
   });
+  it('should create loadDiaries function', () => {
+    expect(component.loadDiaries).toBeDefined();
+    expect(typeof component.loadDiaries).toBe('function');
+  });
   it('should return current date in correct format', () => {
     const date = component.get_date();
     const regex = /^\d{2}\.\d{2}\.\d{4}$/;
