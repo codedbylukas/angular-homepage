@@ -70,4 +70,32 @@ describe('Diary', () => {
     const newId = Number(localStorage.getItem('diary_id') || '0');
     expect(newId).toBe(initialId);
   });
+  it('should delete all diary entries', () => {
+    spyOn(window, 'confirm').and.returnValue(true);
+    localStorage.setItem('diary_id', '1');
+    localStorage.setItem(
+      'diary0',
+      JSON.stringify({ id: 0, date: '01.01.2022', title: 'Test', content: 'Test' }),
+    );
+    component.loadDiaries();
+    expect(component.diaries.length).toBe(1);
+    component.del_all_items_diary();
+    expect(component.diaries.length).toBe(0);
+    expect(localStorage.getItem('diary_id')).toBeNull();
+    expect(localStorage.getItem('diary0')).toBeNull();
+  });
+  it('should not delete diary entries if user cancels', () => {
+    spyOn(window, 'confirm').and.returnValue(false);
+    localStorage.setItem('diary_id', '1');
+    localStorage.setItem(
+      'diary0',
+      JSON.stringify({ id: 0, date: '01.01.2022', title: 'Test', content: 'Test' }),
+    );
+    component.loadDiaries();
+    expect(component.diaries.length).toBe(1);
+    component.del_all_items_diary();
+    expect(component.diaries.length).toBe(1);
+    expect(localStorage.getItem('diary_id')).toBe('1');
+    expect(localStorage.getItem('diary0')).toBeTruthy();
+  });
 });
