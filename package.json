@@ -14,7 +14,7 @@
     "cypress:run": "cypress run"
   },
   "dependencies": {
-    "@angular/animations": "^20.3.18",
+    "@angular/animations": "^21.2.11",
     "@angular/common": "^20.3.18",
     "@angular/compiler": "^20.3.18",
     "@angular/core": "^20.3.18",
