@@ -8,6 +8,9 @@ on:
   # Ermöglicht den manuellen Start über das GitHub-Actions-Tab
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   scan:
     name: Gitleaks Scan
