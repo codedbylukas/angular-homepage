@@ -25,7 +25,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # Der Name zeigt im GitHub-Interface an, welche Version gerade getestet wird
       - name: Setup Node.js ${{ matrix.node-version }}
