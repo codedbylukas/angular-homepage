@@ -33,7 +33,7 @@
     "@angular/build": "^20.3.6",
     "@angular/cli": "^20.3.6",
     "@angular/compiler-cli": "^20.3.18",
-    "@cypress/schematic": "^4.3.0", 
+    "@cypress/schematic": "^5.0.0", 
     "@types/express": "^5.0.0",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^22.0.0",
