@@ -29,7 +29,7 @@ jobs:
 
       # Der Name zeigt im GitHub-Interface an, welche Version gerade getestet wird
       - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
