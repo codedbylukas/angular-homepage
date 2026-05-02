@@ -18,7 +18,7 @@
   <li>
     <input type="checkbox" [checked]="todo.done" (change)="toggleTodo(todo)" />
     <span [class.done]="todo.done">{{ todo.text }}</span>
-    <img src="/assets/img/rubbish.png" class="rubbisch" alt="" (click)="removeTodo(todo)" />
+    <img src="/assets/img/rubbish.png" class="rubbisch" alt="" tabindex="0" (keydown.enter)="removeTodo(todo)" (click)="removeTodo(todo)" />
   </li>
   }
 </ol>

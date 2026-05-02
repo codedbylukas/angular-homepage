@@ -7,13 +7,19 @@
         <button (click)="checkGuess()">Raten</button>
     </div>
     <div>
-        <p *ngIf="message" [class.correct]="message.includes('Richtig!')"
+        @if (message) {
+        <p [class.correct]="message.includes('Richtig!')"
             [class.wrong]="message.includes('zu hoch') || message.includes('zu niedrig')">
             {{ message }}
         </p>
-        <p *ngIf="attempts > 0">Anzahl der Versuche: {{ attempts }}</p>
+        }
+        @if (attempts > 0) {
+        <p>Anzahl der Versuche: {{ attempts }}</p>
+        }
     </div>
 
-    <button *ngIf="gameWon" (click)="resetGame()">Neues Spiel</button>
+    @if (gameWon) {
+    <button (click)="resetGame()">Neues Spiel</button>
+    }
 </div>
 <app-home-btn></app-home-btn>

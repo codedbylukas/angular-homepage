@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, PLATFORM_ID, inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { HomeBtn } from '../home-btn/home-btn';
 
@@ -20,11 +20,7 @@ export class TodoList implements OnInit {
 
   todos: Todo[] = [];
   private nextId = 0;
-  private isBrowser: boolean;
-
-  constructor(@Inject(PLATFORM_ID) platformId: object) {
-    this.isBrowser = isPlatformBrowser(platformId);
-  }
+  private isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
 
   ngOnInit() {
     if (this.isBrowser) {

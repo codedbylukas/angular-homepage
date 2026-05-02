@@ -3,6 +3,8 @@
   <button (click)="addDiary()">+</button>
   <img
     (click)="del_all_items_diary()"
+    (keydown.enter)="del_all_items_diary()"
+    tabindex="0"
     src="/assets/img/rubbish.png"
     alt="Löschen"
     style="cursor: pointer"

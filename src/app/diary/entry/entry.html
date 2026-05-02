@@ -3,6 +3,6 @@
   <p>{{ text }}</p>
   <div class="date">{{ date }}</div>
   <div class="img-div">
-    <img src="/assets/img/rubbish.png" alt="" (click)="del_object(id)" />
+    <img src="/assets/img/rubbish.png" alt="" tabindex="0" (keydown.enter)="del_object(id)" (click)="del_object(id)" />
   </div>
 </div>
