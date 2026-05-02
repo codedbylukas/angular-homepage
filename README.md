@@ -4,6 +4,7 @@
 
 ![CodeQL](https://github.com/codedbylukas/angular-homepage/actions/workflows/codeql.yml/badge.svg)
 ![Tests](https://github.com/codedbylukas/angular-homepage/actions/workflows/test.yml/badge.svg)
+![Dependencies](https://github.com/codedbylukas/angular-homepage/actions/workflows/dependenciesproblems.yml/badge.svg)
 ![Deploy](https://github.com/codedbylukas/angular-homepage/actions/workflows/deploy.yml/badge.svg)
 ![Lint](https://github.com/codedbylukas/angular-homepage/actions/workflows/lint.yml/badge.svg)
 
