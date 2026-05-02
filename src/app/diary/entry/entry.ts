@@ -7,10 +7,10 @@ import { Component, Input } from '@angular/core';
   styleUrl: './entry.scss',
 })
 export class Entry {
-  @Input() title: string = '';
-  @Input() text: string = '';
-  @Input() date: string = '';
-  @Input() id: number = 0;
+  @Input() title = '';
+  @Input() text = '';
+  @Input() date = '';
+  @Input() id = 0;
   del_object(id: number) {
     localStorage.removeItem('diary' + id);
   }

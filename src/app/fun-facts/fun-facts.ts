@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HomeBtn } from '../home-btn/home-btn';
 
-export let playing: boolean = false;
+export let playing = false;
 export let audio: HTMLAudioElement;
 export const facts = [
   "Octopusse haben drei Herzen.",
@@ -221,7 +221,7 @@ export class FunFacts {
   playAudio() {
     if (!playing) {
       playing = true;
-      let randomNumber: number = Math.floor(Math.random() * 204);
+      const randomNumber: number = Math.floor(Math.random() * 204);
       audio = new Audio(`assets/audio/${randomNumber}.wav`);
       audio.onended = () => {
         playing = false;

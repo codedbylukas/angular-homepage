@@ -13,9 +13,9 @@ import { HomeBtn } from '../home-btn/home-btn';
 export class NumberGuessingGame {
   guess: number | null = null;
   randomNumber: number = Math.floor(Math.random() * 100) + 1;
-  message: string = '';
-  attempts: number = 0;
-  gameWon: boolean = false;
+  message = '';
+  attempts = 0;
+  gameWon = false;
 
   checkGuess() {
     if (this.guess === null) {

@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { HomeBtn } from '../home-btn/home-btn'
 
-let confetti_list: HTMLElement[] = [];
+const confetti_list: HTMLElement[] = [];
 @Component({
   selector: 'app-sand-site',
   imports: [HomeBtn],
@@ -12,7 +12,7 @@ let confetti_list: HTMLElement[] = [];
 export class SandSite {
   fireConfetti() {
     for (let i = 0; i < 100; i++) {
-      let confetti = document.createElement('div');
+      const confetti = document.createElement('div');
       confetti.classList.add('confetti-piece');
       confetti.style.position = 'absolute';
       confetti.style.left = Math.random() * 100 + 'vw';

@@ -18,7 +18,7 @@ interface DiaryEntry {
 })
 export class Diary implements OnInit {
   diaries: DiaryEntry[] = [];
-  id: number = 0;
+  id = 0;
   ngOnInit() {
     this.loadDiaries();
   }
@@ -45,8 +45,8 @@ export class Diary implements OnInit {
   addDiary() {
     try {
       const currentId = Number(localStorage.getItem('diary_id') || '0');
-      let title = prompt('Titel');
-      let content = prompt('Inhalt');
+      const title = prompt('Titel');
+      const content = prompt('Inhalt');
       if (title == null || content == null) {
         return;
       }
