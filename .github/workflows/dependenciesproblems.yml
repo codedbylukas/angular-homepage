@@ -1,4 +1,4 @@
-name: Deploy Angular to Pages
+name: Test Dependencies problem
 
 on: [push, pull_request]
 
