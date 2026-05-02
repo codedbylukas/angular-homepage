@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Entry } from './entry/entry';
 import { CommonModule } from '@angular/common';
-import { HomeBtn } from "../home-btn/home-btn";
+import { HomeBtn } from '../home-btn/home-btn';
 interface DiaryEntry {
   id: number;
   date: string;
@@ -68,8 +68,7 @@ export class Diary implements OnInit {
   del_all_items_diary() {
     if (this.diaries.length == 0) {
       return;
-    }
-    else {
+    } else {
       if (confirm('Bist du sicher, dass du alle Einträge löschen möchtest?')) {
         localStorage.clear();
         this.diaries = [];
@@ -81,4 +80,3 @@ export class Diary implements OnInit {
     this.loadDiaries();
   }
 }
-

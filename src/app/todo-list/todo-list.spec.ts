@@ -10,9 +10,7 @@ describe('TodoList', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [TodoList],
-      providers: [
-        { provide: ActivatedRoute, useValue: {} },
-      ],
+      providers: [{ provide: ActivatedRoute, useValue: {} }],
     }).compileComponents();
 
     fixture = TestBed.createComponent(TodoList);

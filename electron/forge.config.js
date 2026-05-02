@@ -20,7 +20,7 @@ module.exports = {
     {
       // ZIP als Backup für Windows (funktioniert auf Kali ohne Mono-Probleme)
       name: '@electron-forge/maker-zip',
-      platforms: ['win32'], 
+      platforms: ['win32'],
     },
 
     // --- MACOS ---

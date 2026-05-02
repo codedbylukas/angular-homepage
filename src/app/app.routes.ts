@@ -15,5 +15,5 @@ export const routes: Routes = [
   { path: 'todo-list', component: TodoList },
   { path: 'number-gessing-game', component: NumberGuessingGame },
   { path: 'diary', component: Diary },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

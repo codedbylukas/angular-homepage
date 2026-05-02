@@ -13,11 +13,10 @@ describe('NumberGuessingGame', () => {
       providers: [
         {
           provide: ActivatedRoute,
-          useValue: {} // mock activated route
-        }
-      ]
-    })
-      .compileComponents();
+          useValue: {}, // mock activated route
+        },
+      ],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NumberGuessingGame);
     component = fixture.componentInstance;

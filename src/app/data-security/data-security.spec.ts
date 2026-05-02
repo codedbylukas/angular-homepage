@@ -10,9 +10,8 @@ describe('DataSecurity', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [DataSecurityComponent],
-      providers: [provideRouter([])]
-    })
-      .compileComponents();
+      providers: [provideRouter([])],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(DataSecurityComponent);
     component = fixture.componentInstance;

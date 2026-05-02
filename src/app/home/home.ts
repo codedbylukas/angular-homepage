@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { Footer} from './footer/footer';
+import { Footer } from './footer/footer';
 import { Box } from './box/box';
 
 @Component({
@@ -10,6 +10,4 @@ import { Box } from './box/box';
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}

@@ -9,7 +9,7 @@ describe('Link Work and text is shown', () => {
     cy.visit('/number-gessing-game');
     cy.contains('Zahlenratespiel');
     cy.contains('Ich habe mir eine Zahl zwischen 1 und 100 ausgedacht. Kannst du sie erraten?');
-    cy.contains("Raten");
+    cy.contains('Raten');
     cy.contains('Home');
   });
   it('Link works', () => {

@@ -9,9 +9,8 @@ describe('FunFacts', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [FunFacts],
-      providers: [provideRouter([])]
-    })
-      .compileComponents();
+      providers: [provideRouter([])],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(FunFacts);
     component = fixture.componentInstance;
@@ -26,7 +25,7 @@ describe('FunFacts', () => {
     expect(typeof component.playAudio).toEqual('function');
   });
   it('function should be called when buton is clickt', () => {
-    spyOn(component, "playAudio");
+    spyOn(component, 'playAudio');
     const button = fixture.nativeElement.querySelector('#button-click');
     button.click();
     expect(component.playAudio).toHaveBeenCalled();

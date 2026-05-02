@@ -1,18 +1,34 @@
 <div class="container">
-    <img tabindex="0" (keydown.enter)="translateToGerman()" (click)="translateToGerman()" src="assets/img/de.svg" id="german-button" class="language language-de" alt="DE">
-    <img tabindex="0" (keydown.enter)="translateToEnglish()" (click)="translateToEnglish()" src="assets/img/us.svg" id="english-button" class="language" alt="US">
-    <h1 id="headline">{{ text.headline }}</h1>
-    <h2 id="project_headline">{{ text.project_headline }}</h2>
-    <div class="projects">
-        <a routerLink="/sand-site" id="sand-site-link">{{ text.sand_site_link }}</a>
-        <a routerLink="/fun-facts" id="fun-facts">{{ text.fun_facts }}</a>
-        <a routerLink="/todo-list" id="todo-list">{{ text.todo_list }}</a>
-        <a routerLink="/number-gessing-game" id="nuber-gessing-game">{{ text.nuber_gessing_game }}</a>
-    </div> 
-    <div class="projects two">
-        <a routerLink="/diary" id="diary">{{ text.diary }}</a>
-    </div>
-    <div class="footer" id="copyright">
-        <p>&copy; 2026 <i>Lukas</i></p>
-    </div>
+  <img
+    tabindex="0"
+    (keydown.enter)="translateToGerman()"
+    (click)="translateToGerman()"
+    src="assets/img/de.svg"
+    id="german-button"
+    class="language language-de"
+    alt="DE"
+  />
+  <img
+    tabindex="0"
+    (keydown.enter)="translateToEnglish()"
+    (click)="translateToEnglish()"
+    src="assets/img/us.svg"
+    id="english-button"
+    class="language"
+    alt="US"
+  />
+  <h1 id="headline">{{ text.headline }}</h1>
+  <h2 id="project_headline">{{ text.project_headline }}</h2>
+  <div class="projects">
+    <a routerLink="/sand-site" id="sand-site-link">{{ text.sand_site_link }}</a>
+    <a routerLink="/fun-facts" id="fun-facts">{{ text.fun_facts }}</a>
+    <a routerLink="/todo-list" id="todo-list">{{ text.todo_list }}</a>
+    <a routerLink="/number-gessing-game" id="nuber-gessing-game">{{ text.nuber_gessing_game }}</a>
+  </div>
+  <div class="projects two">
+    <a routerLink="/diary" id="diary">{{ text.diary }}</a>
+  </div>
+  <div class="footer" id="copyright">
+    <p>&copy; 2026 <i>Lukas</i></p>
+  </div>
 </div>

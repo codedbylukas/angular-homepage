@@ -9,7 +9,7 @@ describe('SandSite', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [SandSite],
-      providers: [provideRouter([])]
+      providers: [provideRouter([])],
     }).compileComponents();
 
     fixture = TestBed.createComponent(SandSite);

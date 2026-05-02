@@ -1,6 +1,12 @@
 <h1>Meine Todo-Liste</h1>
 <div class="center slide-in">
-  <input type="text" placeholder="Notiz eingeben..." #todofield required (keydown.enter)="addtodo()" />
+  <input
+    type="text"
+    placeholder="Notiz eingeben..."
+    #todofield
+    required
+    (keydown.enter)="addtodo()"
+  />
 </div>
 <br />
 <div class="center slide-in">
@@ -15,11 +21,18 @@
 <h2 class="slide-in">{{ headline }}</h2>
 <ol #todolist>
   @for (todo of todos; track todo.id) {
-  <li>
-    <input type="checkbox" [checked]="todo.done" (change)="toggleTodo(todo)" />
-    <span [class.done]="todo.done">{{ todo.text }}</span>
-    <img src="/assets/img/rubbish.png" class="rubbisch" alt="" tabindex="0" (keydown.enter)="removeTodo(todo)" (click)="removeTodo(todo)" />
-  </li>
+    <li>
+      <input type="checkbox" [checked]="todo.done" (change)="toggleTodo(todo)" />
+      <span [class.done]="todo.done">{{ todo.text }}</span>
+      <img
+        src="/assets/img/rubbish.png"
+        class="rubbisch"
+        alt=""
+        tabindex="0"
+        (keydown.enter)="removeTodo(todo)"
+        (click)="removeTodo(todo)"
+      />
+    </li>
   }
 </ol>
 <app-home-btn></app-home-btn>

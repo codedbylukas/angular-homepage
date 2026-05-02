@@ -14,7 +14,8 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ## Install Dependencies
 
-run: 
+run:
+
 ```bash
 npm install
 ```

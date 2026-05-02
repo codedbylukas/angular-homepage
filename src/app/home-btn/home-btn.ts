@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterModule } from "@angular/router";
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home-btn',
@@ -8,6 +8,4 @@ import { RouterLink, RouterModule } from "@angular/router";
   templateUrl: './home-btn.html',
   styleUrl: './home-btn.scss',
 })
-export class HomeBtn {
-
-}
+export class HomeBtn {}

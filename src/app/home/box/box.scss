@@ -7,23 +7,23 @@ h2 {
   color: #555;
   cursor: context-menu;
   text-align: center;
-} 
+}
 
 p {
   margin: 0 0 10px;
   cursor: context-menu;
-} 
+}
 
 a {
   display: inline-block;
   margin: 10px;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-} 
+}
 
 .container {
   animation: slide-in-left 225ms linear;
@@ -40,13 +40,13 @@ a {
   height: auto;
   border-radius: 8px;
   margin: 20px 0;
-} 
+}
 
 .footer {
   margin-top: 20px;
   font-size: 0.9em;
   color: #777777a7;
-} 
+}
 
 .footer:hover {
   color: #777777;
@@ -63,7 +63,7 @@ a {
 
 .language-de {
   right: 55px;
-} 
+}
 
 .projects {
   display: flex;
@@ -74,7 +74,7 @@ a {
 @keyframes slide-in-left {
   from {
     transform: translateX(-100vh);
-  } 
+  }
   to {
     transform: translateX(0);
   }
@@ -83,13 +83,12 @@ a {
 @keyframes slide-in-right {
   from {
     transform: translateX(+100vh);
-  } 
+  }
   to {
     transform: translateX(0);
-  } 
-} 
+  }
+}
 
 .two {
   margin-top: 10px;
 }
-  

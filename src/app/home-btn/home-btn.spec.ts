@@ -10,9 +10,8 @@ describe('HomeBtn', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [HomeBtn],
-      providers: [provideRouter([])]
-    })
-      .compileComponents();
+      providers: [provideRouter([])],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(HomeBtn);
     component = fixture.componentInstance;

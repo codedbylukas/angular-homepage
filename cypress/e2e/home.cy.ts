@@ -38,20 +38,20 @@ describe('Text is possibe to click it', () => {
     cy.visit('/');
     cy.contains('Datenschutz').click();
     cy.url().should('include', '/data-security');
-    cy.visit("/")
+    cy.visit('/');
   });
   it('Test if Gessing game is able to Click it', () => {
     cy.visit('/');
     cy.contains('Rate Spiel').click();
     cy.url().should('include', '/number-gessing-game');
-    cy.visit("/")
+    cy.visit('/');
   });
-  
 });
 describe('Img test', () => {
   it('Should check if the de image is loaded', () => {
     cy.visit('/');
-    cy.get('img[alt="DE"]').should('be.visible')
+    cy.get('img[alt="DE"]')
+      .should('be.visible')
       .and(($img) => {
         const img = $img[0] as HTMLImageElement;
         expect(img.naturalWidth).to.be.gt(0);
@@ -59,7 +59,8 @@ describe('Img test', () => {
   });
   it('Should check if the us image is loaded', () => {
     cy.visit('/');
-    cy.get('img[alt="US"]').should('be.visible')
+    cy.get('img[alt="US"]')
+      .should('be.visible')
       .and(($img) => {
         const img = $img[0] as HTMLImageElement;
         expect(img.naturalWidth).to.be.gt(0);

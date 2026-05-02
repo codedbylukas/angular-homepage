@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { HomeBtn } from '../home-btn/home-btn'
+import { HomeBtn } from '../home-btn/home-btn';
 
 const confetti_list: HTMLElement[] = [];
 @Component({
@@ -7,7 +7,7 @@ const confetti_list: HTMLElement[] = [];
   imports: [HomeBtn],
   templateUrl: './sand-site.html',
   styleUrl: './sand-site.scss',
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 export class SandSite {
   fireConfetti() {
