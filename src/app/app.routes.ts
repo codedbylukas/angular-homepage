@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home';
 import { DataSecurityComponent } from './data-security/data-security';
-import { SandSite } from './sand-site/sand-site';
-import { FunFacts } from './fun-facts/fun-facts';
-import { TodoList } from './todo-list/todo-list';
-import { NumberGuessingGame } from './number-guessing-game/number-guessing-game';
-import { Diary } from './diary/diary';
+import { SandSite } from './projects/sand-site/sand-site';
+import { FunFacts } from './projects/fun-facts/fun-facts';
+import { TodoList } from './projects/todo-list/todo-list';
+import { NumberGuessingGame } from './projects/number-guessing-game/number-guessing-game';
+import { Diary } from './projects/diary/diary';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },

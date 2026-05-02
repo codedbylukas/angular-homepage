@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Entry } from './entry/entry';
 import { CommonModule } from '@angular/common';
-import { HomeBtn } from '../home-btn/home-btn';
+import { HomeBtn } from '../../home-btn/home-btn';
 interface DiaryEntry {
   id: number;
   date: string;

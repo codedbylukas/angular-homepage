@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NumberGuessingGame } from './number-guessing-game';
-import { HomeBtn } from '../home-btn/home-btn';
+import { HomeBtn } from '../../home-btn/home-btn';
 import { ActivatedRoute } from '@angular/router';
 
 describe('NumberGuessingGame', () => {
