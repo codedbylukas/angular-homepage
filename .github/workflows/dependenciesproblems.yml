@@ -1,8 +1,6 @@
 name: Deploy Angular to Pages
 
-on:
-  - push:
-  - pull_request:
+on: [push, pull_request]
 
 permissions:
   contents: read
