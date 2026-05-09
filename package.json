@@ -6,6 +6,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "gitleaks-scan": "gitleaks detect --verbose --report-format csv --report-path leaks.csv",
+    "gitleaks-scan-redact": "gitleaks detect --verbose --report-format csv --report-path leaks.csv --redact=0",
+    "gitleaks-scan-dir": "gitleaks dir . --verbose --report-format csv --report-path leaks.csv",
+    "gitleaks-scan-protected": "gitleaks detect --verbose --report-format csv --report-path leaks.csv --staged",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "watch": "ng build --watch --configuration development",
@@ -56,7 +60,11 @@
     "typescript-eslint": "8.46.4"
   },
   "overrides": {
-    "postcss": "^8.5.10"
+    "postcss": "^8.5.10",
+    "@babel/plugin-transform-modules-systemjs": "^7.29.0",
+    "fast-uri": "^3.1.2",
+    "hono": "^4.12.18",
+    "ip-address": "^10.1.1"
   },
   "prettier": {
     "printWidth": 100,
