@@ -1,0 +1,5 @@
+/node_modules/
+/electron/src/*
+/cordova/www/*
+/for_installation/
+

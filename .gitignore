@@ -16,10 +16,10 @@ leaks.sarif
 /electron/src/*
 
 # Build-Ordner ignorieren
-for_installation/Linux/x64/
-for_installation/win/32
-cordova/platforms/
-cordova/plugins/
+/for_installation/Linux/x64/
+/for_installation/win/32
+/cordova/platforms/
+/cordova/plugins/
 
 # Node
 /node_modules
@@ -51,7 +51,7 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
-__screenshots__/
+/__screenshots__/
 
 # System files
 .DS_Store
