@@ -3,3 +3,5 @@
 /cordova/www/*
 /for_installation/
 
+leaks.csv
+leaks.sarif
